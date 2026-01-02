@@ -10,7 +10,7 @@ const timelineData = [
   {
     date: '2021.04',
     title: '富山県立大学 工学部 情報システム工学科 入学',
-    logo: '/images/logo_tpu.png'
+    logo: '/images/AboutMe/logo_tpu.png'
   },
   {
     date: '2021.09 - 2023.06',
@@ -23,7 +23,7 @@ const timelineData = [
     title: '学生団体「POLYGON」 加入',
     description:
       '情報分野に興味のある学生が集う学生団体に加入。IoT開発プロジェクトやハッカソンに積極的に参加。また、後述する富山県庁DX推進の業務にアサイン',
-    logo: '/images/logo_polygon.png'
+    logo: '/images/AboutMe/logo_polygon.png'
   },
   {
     date: '2023.04 - 2026.03',
@@ -36,7 +36,7 @@ const timelineData = [
     title: '株式会社CARTA HOLDINGS サマーインターン「Treasure」 参加',
     description:
       '3週間のサマーインターン「Treasure」に参加。前半に講義でインプットし、後半はチームでハッカソン形式で企画･開発。最終発表ではフロントエンド賞を受賞',
-    logo: '/images/logo_carta.jpg'
+    logo: '/images/AboutMe/logo_carta.jpg'
   },
   {
     date: '2023.09',
@@ -44,14 +44,14 @@ const timelineData = [
       'エキサイトホールディングス株式会社 サマーインターン「Booost!!!」 参加',
     description:
       '1週間のサマーインターン「Booost!!!」に参加。ヘルスケア事業のお悩み相談サービスのレコメンドシステムをチームで企画･開発',
-    logo: '/images/logo_excite.png'
+    logo: '/images/AboutMe/logo_excite.png'
   },
   {
     date: '2023.10 - 2027.03',
     title: '岩本・河崎研究室（SIDLab）配属',
     description:
       '研究活動や外部と連携したプロジェクト、KGリーダーで後輩の育成などを行う',
-    logo: '/images/logo_sidlab.svg'
+    logo: '/images/AboutMe/logo_sidlab.svg'
   },
   {
     date: '2024.02 - 2024.03',
@@ -87,7 +87,8 @@ const awardData = [
     date: '2023.06.17',
     title: 'サポーターズ 技育CAMPキャラバン@福岡 優秀賞',
     description:
-      'YouTubeの海外の動画を、リアルタイムで日本語の音声に変換して再生するChrome拡張「ZUNDAMON-X」を開発'
+      'YouTubeの海外の動画を、リアルタイムで日本語の音声に変換して再生するChrome拡張「ZUNDAMON-X」を開発',
+    image: '/images/AboutMe/2023_技育CAMPキャラバン優秀賞.jpg'
   },
   {
     date: '2023.07.29',
@@ -98,7 +99,8 @@ const awardData = [
   {
     date: '2023.08.07 - 08.25',
     title:
-      '株式会社CARTA HOLDINGS サマーインターンシップ【Treasure】参加 / フロントエンド賞受賞'
+      '株式会社CARTA HOLDINGS サマーインターンシップ【Treasure】参加 / フロントエンド賞受賞',
+    image: '/images/AboutMe/2023_CARTAHOLDINGSフロントエンド賞.jpg'
   },
   {
     date: '2023.08.12',
@@ -109,7 +111,13 @@ const awardData = [
     date: '2023.09.02',
     title: 'サポーターズ 技育CAMPアドバンス Vol.3 大賞(優勝)',
     description:
-      'YouTube吹き替え翻訳「ZUNDAMON-X」をブラッシュアップして出場。プレゼンを担当し、優勝（大賞）を受賞'
+      'YouTube吹き替え翻訳「ZUNDAMON-X」をブラッシュアップして出場。プレゼンを担当し、優勝（大賞）を受賞',
+    image: '/images/AboutMe/2023_技育アドバンス優勝.jpg'
+  },
+  {
+    date: '2024.02',
+    title: 'とやまローカルメディアハッカソン 受賞',
+    image: '/images/AboutMe/とやまローカルメディアハッカソン.jpeg'
   },
   {
     date: '2025.02.26',
@@ -245,18 +253,18 @@ const designSkills = [
 const dxSkills = [
   {
     title: 'kintone',
-    img: '/images/kintone.jpg',
+    img: '/images/AboutMe/logo_kintone.jpg',
     level: 3,
     imgClass: 'w-20 h-20 object-contain'
   },
   {
     title: 'Power Automate',
-    img: '/images/PowerAutomate.svg',
+    img: '/images/AboutMe/logo_PowerAutomate.svg',
     level: 3
   },
   {
     title: 'MS365',
-    img: '/images/MS365.jpg',
+    img: '/images/AboutMe/logo_MS365.jpg',
     level: 3
   }
 ]
@@ -269,17 +277,17 @@ const otherSkills = [
   },
   {
     title: 'Notion',
-    img: '/images/notion.png',
+    img: '/images/AboutMe/logo_notion.png',
     level: 3
   },
   {
     title: 'Docker',
-    img: '/images/docker.png',
+    img: '/images/AboutMe/logo_docker.png',
     level: 2
   },
   {
     title: 'Final Cut Pro',
-    img: '/images/FinalCutPro.png',
+    img: '/images/AboutMe/logo_FinalCutPro.png',
     level: 3
   },
   {
@@ -339,7 +347,7 @@ const ExTimelineItem = ({ date, title, description, logo, isLast }) => {
 }
 
 // シンプルなタイムラインアイテムコンポーネント（実績用）
-const TimelineItem = ({ date, title, description, isLast }) => {
+const TimelineItem = ({ date, title, description, image, isLast }) => {
   return (
     <div className="ml-5 relative pb-8 last:pb-0 flex">
       {/* 左側: ドットと縦線 */}
@@ -361,6 +369,17 @@ const TimelineItem = ({ date, title, description, isLast }) => {
           {title}
         </p>
         {description && <p className="text-[15px]">{description}</p>}
+        {image && (
+          <div className="mt-3">
+            <Image
+              src={image}
+              alt={title}
+              width={280}
+              height={200}
+              className="rounded-lg shadow-sm w-auto h-auto max-w-full max-h-[300px]"
+            />
+          </div>
+        )}
       </div>
     </div>
   )
@@ -522,6 +541,7 @@ const AboutMe = () => (
             date={item.date}
             title={item.title}
             description={item.description}
+            image={item.image}
             isLast={index === awardData.length - 1}
           />
         ))}

@@ -1,6 +1,5 @@
 [
   {
-    "id": "project-1",
     "title": "富山県庁 DX推進サポーター",
     "thumbnail": "/images/Projects/DXサポーター成果発表_2024_1.jpeg",
     "description": "富山県庁のデジタル推進室内で「DX推進サポーター」として雇用（非常勤職員）",
@@ -11,7 +10,6 @@
     ]
   },
   {
-    "id": "project-2",
     "title": "卒業研究",
     "thumbnail": "/images/Projects/UBISymposium2025.jpeg",
     "description": "卒業研究: 音楽嗜好の共有を通じた段階的な自己開示が受容性に与える効果の検証",
@@ -22,7 +20,6 @@
     ]
   },
   {
-    "id": "project-3",
     "title": "関西・大阪万博登壇",
     "thumbnail": "/images/Projects/大阪万博2025_登壇.jpg",
     "description": "若者に向けて「自分を変えるということ」というテーマで登壇",

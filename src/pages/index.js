@@ -61,7 +61,7 @@ const Home = () => {
           <div className="flex-shrink-0 mt-4 md:mt-0 md:ml-6 text-center">
             <div className="inline-block w-[100px] h-[100px] border-2 border-white/80 rounded-full overflow-hidden">
               <Image
-                src="/images/koki_face.jpg"
+                src="/images/Top/koki_face.jpg"
                 alt="Profile image"
                 width="100"
                 height="100"

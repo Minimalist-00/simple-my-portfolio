@@ -1,5 +1,7 @@
 自分がプレイしているゲームや好きなゲームをTwitterのフォロワーに紹介するために制作したWebアプリケーション。カード形式でゲームを視覚的に表示し、フォロワーが一目で興味のあるゲームを見つけられるギャラリーサービス。
 
+<img src="/images/development/game-gallery/game-gallery-is-hoge.jpeg" alt="Overview" className="rounded-md w-full shadow-md mb-6" />
+
 ## 主な機能
 
 - ゲームをカード形式で表示

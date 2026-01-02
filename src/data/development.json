@@ -1,56 +1,5 @@
 [
   {
-    "id": "grant-finder",
-    "title": "Grant Finder",
-    "thumbnail": "/images/development/grant-finder/デジタル庁.png",
-    "description": "JグランツAPIから補助金情報を自動取得・収集するシステム",
-    "contentFile": "development/grant-finder.md",
-    "tags": [
-      { "name": "Backend", "color": "green" },
-      { "name": "個人開発", "color": "cyan" }
-    ],
-    "skills": ["python", "azure"]
-  },
-  {
-    "id": "class-todo-app",
-    "title": "Class Todo App",
-    "thumbnail": "/images/no-image.png",
-    "description": "Azure FunctionsとSQL Databaseを使用したバックエンド学習用Todoアプリ",
-    "contentFile": "development/class-todo-app.md",
-    "tags": [
-      { "name": "Backend", "color": "green" },
-      { "name": "個人開発", "color": "cyan" }
-    ],
-    "skills": ["nextjs", "js", "azure"]
-  },
-  {
-    "id": "game-gallery",
-    "title": "Game Gallery",
-    "thumbnail": "/images/development/game-gallery/game-gallery-サムネ.png",
-    "description": "自分がプレイしているゲームや好きなゲームをTwitterのフォロワーに紹介するために制作したWebアプリケーション",
-    "contentFile": "development/game-gallery.md",
-    "tags": [
-      { "name": "Frontend", "color": "blue" },
-      { "name": "個人開発", "color": "cyan" }
-    ],
-    "skills": ["nextjs", "ts", "tailwindcss"]
-  },
-  {
-    "id": "seichi-cross-over",
-    "title": "Seichi Cross Over",
-    "thumbnail": "/images/development/seichi-cross-over/SeichiCrossOver.png",
-    "description": "アニメ好きな外国人観光客が日本人と繋がって聖地巡礼ができるマッチングサービス",
-    "contentFile": "development/seichi-cross-over.md",
-    "tags": [
-      { "name": "Frontend", "color": "blue" },
-      { "name": "UI/UX", "color": "pink" },
-      { "name": "チーム開発", "color": "orange" },
-      { "name": "ハッカソン", "color": "red" }
-    ],
-    "skills": ["react", "graphql", "figma"]
-  },
-  {
-    "id": "zundamon-x",
     "title": "ZUNDAMON-X",
     "thumbnail": "/images/development/zundamon-x/ZUNDAMON-X-サムネ.png",
     "description": "海外のYouTubeの動画を可愛い声でリアルタイム吹き替えする",
@@ -64,7 +13,6 @@
     "skills": ["react", "ts", "recoil"]
   },
   {
-    "id": "quest-board",
     "title": "Quest Board",
     "thumbnail": "/images/development/quest-board/QuestBoard.png",
     "description": "学生団体POLYGONでプロジェクト管理・参加ができる掲示板サービス",
@@ -77,7 +25,41 @@
     "skills": ["go", "postgres", "docker", "react"]
   },
   {
-    "id": "oya-class",
+    "title": "Game Gallery",
+    "thumbnail": "/images/development/game-gallery/game-gallery-サムネ.png",
+    "description": "自分がプレイしているゲームや好きなゲームをTwitterのフォロワーに紹介するために制作したWebアプリケーション",
+    "contentFile": "development/game-gallery.md",
+    "tags": [
+      { "name": "Frontend", "color": "blue" },
+      { "name": "個人開発", "color": "cyan" }
+    ],
+    "skills": ["nextjs", "ts", "tailwindcss"]
+  },
+  {
+    "title": "ToDo App",
+    "thumbnail": "/images/AboutMe/logo_no-image.png",
+    "description": "授業教材としてのToDoアプリをNext.js × Azureで作成",
+    "contentFile": "development/class-todo-app.md",
+    "tags": [
+      { "name": "Backend", "color": "green" },
+      { "name": "個人開発", "color": "cyan" }
+    ],
+    "skills": ["nextjs", "js", "azure"]
+  },
+  {
+    "title": "Seichi Cross Over",
+    "thumbnail": "/images/development/seichi-cross-over/SeichiCrossOver.png",
+    "description": "アニメ好きな外国人観光客が日本人と繋がって聖地巡礼ができるマッチングサービス",
+    "contentFile": "development/seichi-cross-over.md",
+    "tags": [
+      { "name": "Frontend", "color": "blue" },
+      { "name": "UI/UX", "color": "pink" },
+      { "name": "チーム開発", "color": "orange" },
+      { "name": "ハッカソン", "color": "red" }
+    ],
+    "skills": ["react", "graphql", "figma"]
+  },
+  {
     "title": "Oya class",
     "thumbnail": "/images/development/oya-class/Oyaclass.png",
     "description": "小学校の先生と保護者に向けた「学校のお便りが机の奥に詰まること」を解決したサービス",
@@ -90,7 +72,29 @@
     "skills": ["react", "mui", "azure", "nodejs"]
   },
   {
-    "id": "spring-iot",
+    "title": "Grant Finder",
+    "thumbnail": "/images/development/grant-finder/デジタル庁.png",
+    "description": "JグランツAPIから補助金情報を自動取得・収集するシステム",
+    "contentFile": "development/grant-finder.md",
+    "tags": [
+      { "name": "Backend", "color": "green" },
+      { "name": "個人開発", "color": "cyan" }
+    ],
+    "skills": ["python", "azure"]
+  },
+  {
+    "title": "KeyCaps",
+    "thumbnail": "/images/development/keycaps/KeyCaps.png",
+    "description": "初めて制作したショッピングサイトを模倣したWebアプリ",
+    "contentFile": "development/keycaps.md",
+    "tags": [
+      { "name": "Frontend", "color": "blue" },
+      { "name": "Design", "color": "pink" },
+      { "name": "個人開発", "color": "cyan" }
+    ],
+    "skills": ["react", "bootstrap", "mui"]
+  },
+  {
     "title": "春プロジェクト IoT班",
     "thumbnail": "/images/development/spring-iot/SensingDXCenter.png",
     "description": "IoT（センサ）を活用して、当学施設「DXセンター」の情報を表示するWebアプリ",
@@ -103,16 +107,13 @@
     "skills": ["react", "firebase", "python", "sass", "raspberrypi"]
   },
   {
-    "id": "keycaps",
-    "title": "KeyCaps",
-    "thumbnail": "/images/development/keycaps/KeyCaps.png",
-    "description": "初めて制作したショッピングサイトを模倣したWebアプリ",
-    "contentFile": "development/keycaps.md",
+    "title": "Fantarest",
+    "thumbnail": "/images/development/fantarest/FANTAREST.png",
+    "description": "富山で「スキ」を見つけるための、魅力発信型プラットフォームをスマホ向けに企画",
+    "contentFile": "development/fantarest.md",
     "tags": [
-      { "name": "Frontend", "color": "blue" },
-      { "name": "Design", "color": "pink" },
-      { "name": "個人開発", "color": "cyan" }
-    ],
-    "skills": ["react", "bootstrap", "mui"]
+      { "name": "チーム開発", "color": "orange" },
+      { "name": "ハッカソン", "color": "red" }
+    ]
   }
 ]

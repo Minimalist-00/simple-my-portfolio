@@ -9,7 +9,16 @@ import path from 'path'
 export function getProjectsFromJson(jsonFileName) {
   const filePath = path.join(process.cwd(), 'src', 'data', jsonFileName)
   const fileContents = fs.readFileSync(filePath, 'utf8')
-  return JSON.parse(fileContents)
+  const data = JSON.parse(fileContents)
+
+  return data.map(item => {
+    // IDがない場合はcontentFileから生成する
+    if (!item.id && item.contentFile) {
+      const id = path.basename(item.contentFile, '.md')
+      return { ...item, id }
+    }
+    return item
+  })
 }
 
 /**
