@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Layout from '../components/layouts/article'
 
-// モックデータ
 const timelineData = [
   {
     date: '2021.03',
@@ -73,7 +72,6 @@ const timelineData = [
   }
 ]
 
-// 実績用モックデータ
 const awardData = [
   {
     date: '2023.04.27',
@@ -128,9 +126,78 @@ const frontendSkills = [
     level: 3
   },
   {
+    title: 'React',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    level: 4
+  },
+  {
+    title: 'Next.js',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    level: 4
+  }
+]
+
+const backendSkills = [
+  {
+    title: 'Go',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg',
+    level: 2
+  },
+  {
+    title: 'Python',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+    level: 3
+  },
+  {
+    title: 'TypeScript',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    level: 3
+  },
+  {
+    title: 'C',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
+    level: 2
+  },
+  {
+    title: 'C#',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+    level: 2
+  },
+  {
+    title: 'C++',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
+    level: 2
+  },
+  {
+    title: 'Java',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+    level: 2
+  }
+]
+
+const cloudSkills = [
+  {
+    title: 'AWS',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+    level: 2
+  },
+  {
+    title: 'Azure',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
+    level: 2
+  }
+]
+
+const designSkills = [
+  {
+    title: 'Figma',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+    level: 3
+  },
+  {
     title: 'HTML',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-    level: 5
+    level: 3
   },
   {
     title: 'CSS',
@@ -140,15 +207,50 @@ const frontendSkills = [
   {
     title: 'SCSS',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
-    level: 1
+    level: 3
   }
 ]
 
-const backendSkills = [
+const otherSkills = [
   {
-    title: 'Go',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg',
+    title: 'GitHub',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    level: 4
+  },
+  {
+    title: 'PostgreSQL',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
     level: 2
+  },
+  {
+    title: 'Supabase',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg',
+    level: 3
+  },
+  {
+    title: 'Docker',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+    level: 2
+  },
+  {
+    title: 'kintone',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+    level: 3
+  },
+  {
+    title: 'PowerAutomate',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+    level: 3
+  },
+  {
+    title: 'Final Cut Pro',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg',
+    level: 3
+  },
+  {
+    title: 'Premiere Pro',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-original.svg',
+    level: 3
   }
 ]
 
@@ -240,9 +342,9 @@ const SkillCard = ({ skills }) => {
             className="w-14 mx-auto pb-2"
           />
           <p className="pb-1 font-medium">{card.title}</p>
-          <div className="flex justify-center gap-0">
+          <span className="flex justify-center gap-0">
             {generateStars(card.level)}
-          </div>
+          </span>
         </div>
       ))}
     </div>
@@ -291,12 +393,7 @@ const AboutMe = () => (
   <Layout title="About Me">
     <div>
       <div>
-        <h3 className="text-xl mb-4">Skills</h3>
-
-        <p className="pb-8">
-          テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-        </p>
-
+        <h3 className="text-xl mb-4 font-bold">Development Skills</h3>
         {/* Frontend */}
         <h5 className="text-lg font-bold pb-4">Frontend</h5>
         <SkillCard skills={frontendSkills} />
@@ -305,13 +402,17 @@ const AboutMe = () => (
         <h5 className="text-lg font-bold pb-4 pt-10">Backend</h5>
         <SkillCard skills={backendSkills} />
 
+        {/* Cloud */}
+        <h5 className="text-lg font-bold pb-4 pt-10">Cloud</h5>
+        <SkillCard skills={cloudSkills} />
+
         {/* Design */}
         <h5 className="text-lg font-bold pb-4 pt-10">Design</h5>
-        <SkillCard skills={[]} />
+        <SkillCard skills={designSkills} />
 
         {/* Other */}
         <h5 className="text-lg font-bold pb-4 pt-10">Other</h5>
-        <SkillCard skills={[]} />
+        <SkillCard skills={otherSkills} />
       </div>
 
       <div className="mt-10">

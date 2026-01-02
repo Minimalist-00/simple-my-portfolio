@@ -9,6 +9,17 @@ if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
 }
 
+// Suppress fetchPriority warning in development
+if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+  const originalError = console.error
+  console.error = (...args) => {
+    if (typeof args[0] === 'string' && args[0].includes('fetchPriority')) {
+      return
+    }
+    originalError.apply(console, args)
+  }
+}
+
 function Website({ Component, pageProps, router }) {
   return (
     <>

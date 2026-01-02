@@ -47,4 +47,26 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
+
+  /* Life Article - Note.com style text spacing */
+  .life-article {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .life-article p {
+    margin-bottom: 1.5em;
+  }
+
+  .life-article section {
+    margin-bottom: 1.5em;
+  }
+
+  .life-article h2 {
+    line-height: 1.4;
+  }
+
+  .life-article h3 {
+    line-height: 1.4;
+  }
 }

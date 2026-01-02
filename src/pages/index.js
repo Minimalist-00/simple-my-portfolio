@@ -8,31 +8,39 @@ import {
   IoNewspaper
 } from 'react-icons/io5'
 import Layout from '../components/layouts/article'
-import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 
 const Home = () => {
   // Bioデータの配列
   const bioData = [
     {
-      year: '2021',
+      year: '2021.3',
       description: '富山県立高岡工芸高等学校 電子機械科 卒業'
     },
     {
-      year: '2021',
+      year: '2021.4',
       description: '富山県立大学 工学部 情報システム工学科 入学'
     },
     {
-      year: '2025',
-      description: '富山県立大学 工学部 情報システム工学科 卒業'
+      year: '2023.4',
+      description: '富山県庁で「DX推進サポーター」 任命'
     },
     {
-      year: '2025',
+      year: '2023.10',
+      description: '岩本・河崎研究室（社会情報システムデザイン研究室） 配属'
+    },
+    {
+      year: '2025.3',
+      description: '富山県立大学 工学部 情報システム工学科 卒業'
+    },
+
+    {
+      year: '2025.4',
       description: '富山県立大学 研究工学科 電子・情報工学専攻 入学'
     },
     {
-      year: '2026',
-      description: '休学し、フィリピンとカナダに留学（予定）'
+      year: '2026.4',
+      description: '1年休学し、フィリピンとカナダに留学を予定'
     }
   ]
 
@@ -48,7 +56,7 @@ const Home = () => {
         <div className="md:flex">
           <div className="flex-grow">
             <h2 className="text-4xl font-bold">Koki Nakagawa</h2>
-            <p>Japan / Graduate Student / Developer</p>
+            <p>日本 / 情報工学修士 / エンジニア</p>
           </div>
           <div className="flex-shrink-0 mt-4 md:mt-0 md:ml-6 text-center">
             <div className="inline-block w-[100px] h-[100px] border-2 border-white/80 rounded-full overflow-hidden">
@@ -65,7 +73,7 @@ const Home = () => {
         {/* 自己紹介 */}
         <Section delay={0.1}>
           <h3 className="section-title">自己紹介</h3>
-          <Paragraph>
+          <p className="text-justify hyphens-auto">
             富山県立大学で情報工学を専攻する修士1年生
             <br />
             中学から高校時代、スプラトゥーンというゲームを5000時間プレイ。授業中は爆睡、家に帰ってからは朝までゲームをしていた元ダメ人間（自称）
@@ -73,7 +81,7 @@ const Home = () => {
             そんな自分に嫌気がさし、「自分を変えよう」と決心。
             <br />
             2025年に大学院進学し、2026年に夢の実現のため1年の海外留学を予定
-          </Paragraph>
+          </p>
           <div className="text-center my-4">
             <NextLink
               href="/Projects"
@@ -98,12 +106,11 @@ const Home = () => {
           </div>
         </Section>
 
-        {/* Bio（経歴） */}
         <Section delay={0.2}>
           <h3 className="section-title">Bio</h3>
           {bioData.map((bio, index) => (
             <div key={index} className="mb-2">
-              <div className="grid grid-cols-[4em_1fr]">
+              <div className="grid grid-cols-[5em_1fr]">
                 <div className="font-bold">{bio.year}</div>
                 <div>{bio.description}</div>
               </div>
@@ -111,13 +118,33 @@ const Home = () => {
           ))}
         </Section>
 
-        {/* できること */}
         <Section delay={0.3}>
-          <h3 className="section-title">できること</h3>
-          <Paragraph>
-            Web開発、モバイルアプリ開発、UI/UXデザイン、
-            機械学習など幅広い分野に興味を持っています。
-          </Paragraph>
+          <h3 className="section-title">開発経験とモチベーション</h3>
+          <div className="text-justify hyphens-auto">
+            <div>
+              <p>技術スタック</p>
+              <ul className="list-disc list-inside">
+                <li>Next.js（TypeScript）を用いたWebアプリケーション開発</li>
+                <li>
+                  Figmaを使用した簡単なUIデザイン、TailwindCSSやMaterial
+                  UIを用いたスタイリング
+                </li>
+                <li>
+                  TypeScriptやPython、Goを用いた簡単なAPI作成、オープンAPIを使用したバックエンド制作
+                </li>
+                <li>
+                  Azure、AWSなどのクラウドサービスを用いたクラウドベースの開発
+                </li>
+                <li>Gitを使用したバージョン管理、プロジェクト共有</li>
+              </ul>
+            </div>
+            <div className="pt-2">
+              これまで、授業の開発を始めとして3回ハッカソンへの出場（内2回受賞）、インターンシップや個人で開発を行ってきた。海外の動画を別の言語にリアルタイムで吹き替えする拡張機能や、学生団体のプロジェクトをゲームの掲示板風に管理するサービスを作ってきた。業務面では、フルスタックなToDoアプリ教材の制作や、行政で過去の予算要求を参照するRAGシステムをAzureで開発してきた
+            </div>
+            <div className="pt-2">
+              現在は単なるWebアプリ開発に留まらず、アーティストやクリエイターの自己表現の憧れから、「やりたい」を諦めてきたゲーム制作と、Vlog制作（動画撮影、編集）に挑戦している。
+            </div>
+          </div>
         </Section>
 
         {/* SNSリンク */}
