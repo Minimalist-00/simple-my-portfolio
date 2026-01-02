@@ -14,7 +14,9 @@ if (typeof window !== 'undefined') {
 if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
   const originalError = console.error
   console.error = (...args) => {
-    if (typeof args[0] === 'string' && args[0].includes('fetchPriority')) {
+    if (
+      args.some(arg => typeof arg === 'string' && arg.includes('fetchPriority'))
+    ) {
       return
     }
     originalError.apply(console, args)
