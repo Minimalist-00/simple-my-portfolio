@@ -61,6 +61,7 @@
       "thumbnail": "/images/no-image.png",
       "description": "",
       "contentFile": "projects/ポートランド起業家研修.md",
+      "hidden": true,
       "tags": ["overseas", "entrepreneurship"]
     }
   ]
