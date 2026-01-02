@@ -1,4 +1,7 @@
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import {
   IoLogoGithub,
   IoLogoInstagram,
@@ -10,6 +13,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
 const Home = () => {
+  const { t } = useTranslation('common')
+  const router = useRouter()
   // Bioデータの配列
   const bioData = [
     {
@@ -195,3 +200,11 @@ const Home = () => {
 }
 
 export default Home
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common']))
+    }
+  }
+}

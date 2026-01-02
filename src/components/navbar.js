@@ -1,7 +1,7 @@
 import NextLink from 'next/link'
 import { useState } from 'react'
+import { LanguageToggleButton } from './language-toggle-button'
 import Logo from './logo'
-import ThemeToggleButton from './theme-toggle-button'
 
 // メニュー項目の定義
 const menuItems = [
@@ -71,7 +71,7 @@ const Navbar = props => {
         </div>
 
         <div className="flex-1 text-right">
-          <ThemeToggleButton />
+          <LanguageToggleButton />
 
           {/* Mobile Menu Button */}
           <div className="ml-2 inline-block md:hidden relative">

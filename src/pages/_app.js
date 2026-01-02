@@ -1,5 +1,6 @@
 import { Analytics } from '@vercel/analytics/react'
 import { AnimatePresence } from 'framer-motion'
+import { appWithTranslation } from 'next-i18next'
 
 import Fonts from '../components/fonts'
 import Layout from '../components/layouts/main'
@@ -42,4 +43,4 @@ function Website({ Component, pageProps, router }) {
   )
 }
 
-export default Website
+export default appWithTranslation(Website)
