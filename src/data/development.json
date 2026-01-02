@@ -37,7 +37,7 @@
   },
   {
     "title": "ToDo App",
-    "thumbnail": "/images/AboutMe/logo_no-image.png",
+    "thumbnail": "/images/no-image.png",
     "description": "授業教材としてのToDoアプリをNext.js × Azureで作成",
     "contentFile": "development/class-todo-app.md",
     "tags": [

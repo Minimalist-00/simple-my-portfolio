@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
 import CardList from '../components/card-list'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
 
 const Projects = () => {
-  const [mainProjects, setMainProjects] = useState([])
-  const [otherProjects, setOtherProjects] = useState([])
+  const [projects, setProjects] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -19,12 +17,7 @@ const Projects = () => {
           throw new Error(data.error || 'データの取得に失敗しました')
         }
 
-        // プロジェクトを2つのグループに分ける
-        const main = data.projects.slice(0, 4)
-        const other = data.projects.slice(4)
-
-        setMainProjects(main)
-        setOtherProjects(other)
+        setProjects(data.projects)
       } catch (err) {
         console.error('Projects fetch error:', err)
         setError(err.message)
@@ -67,21 +60,8 @@ const Projects = () => {
   return (
     <Layout title="Projects">
       <div>
-        <h3 className="text-xl mb-4 font-bold">研究室での活動</h3>
-
-        <CardList items={mainProjects} delay={0} apiEndpoint="/api/projects" />
-
-        <Section delay={0.2}>
-          <hr className="my-6 border-gray-300" />
-
-          <h3 className="text-xl mb-4">その他の活動</h3>
-        </Section>
-
-        <CardList
-          items={otherProjects}
-          delay={0.3}
-          apiEndpoint="/api/projects"
-        />
+        <h3 className="text-xl mb-4 font-bold">これまでの活動</h3>
+        <CardList items={projects} delay={0} apiEndpoint="/api/projects" />
       </div>
     </Layout>
   )

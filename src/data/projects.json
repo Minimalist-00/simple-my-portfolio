@@ -1,32 +1,74 @@
 [
   {
     "title": "富山県庁 DX推進サポーター",
-    "thumbnail": "/images/Projects/DXサポーター成果発表_2024_1.jpeg",
+    "thumbnail": "/images/DXサポーター成果発表_2024_1.jpeg",
     "description": "富山県庁のデジタル推進室内で「DX推進サポーター」として雇用（非常勤職員）",
     "contentFile": "projects/DXSupporter.md",
     "tags": [
       { "name": "行政", "color": "blue" },
-      { "name": "DX", "color": "green" }
+      { "name": "DX推進", "color": "green" }
+    ]
+  },
+  {
+    "title": "修士研究",
+    "thumbnail": "/images/no-image.png",
+    "description": "修士研究: スマートフォンにおける後悔使用予測",
+    "contentFile": "projects/修士研究.md",
+    "tags": [
+      { "name": "研究室", "color": "blue" },
+      { "name": "研究", "color": "blue" },
+      { "name": "社会心理学", "color": "green" }
     ]
   },
   {
     "title": "卒業研究",
-    "thumbnail": "/images/Projects/UBISymposium2025.jpeg",
+    "thumbnail": "/images/UBISymposium2025.jpeg",
     "description": "卒業研究: 音楽嗜好の共有を通じた段階的な自己開示が受容性に与える効果の検証",
-    "contentFile": "projects/Research.md",
+    "contentFile": "projects/卒業研究.md",
     "tags": [
+      { "name": "研究室", "color": "blue" },
       { "name": "研究", "color": "blue" },
       { "name": "社会心理学", "color": "green" }
     ]
   },
   {
     "title": "関西・大阪万博登壇",
-    "thumbnail": "/images/Projects/大阪万博2025_登壇.jpg",
+    "thumbnail": "/images/大阪万博2025_登壇.jpg",
     "description": "若者に向けて「自分を変えるということ」というテーマで登壇",
     "contentFile": "projects/大阪万博登壇.md",
     "tags": [
       { "name": "onStage", "color": "yellow" },
-      { "name": "プレゼンテーション", "color": "green" }
+      { "name": "プレゼン", "color": "green" }
+    ]
+  },
+  {
+    "title": "KGリーダー",
+    "thumbnail": "/images/no-image.png",
+    "description": "",
+    "contentFile": "projects/.md",
+    "tags": [
+      { "name": "研究室", "color": "purple" },
+      { "name": "リーダーシップ", "color": "orange" }
+    ]
+  },
+  {
+    "title": "Web講義 TA",
+    "thumbnail": "/images/no-image.png",
+    "description": "",
+    "contentFile": "projects/.md",
+    "tags": [
+      { "name": "教育", "color": "cyan" },
+      { "name": "TA", "color": "pink" }
+    ]
+  },
+  {
+    "title": "ポートランド起業家研修",
+    "thumbnail": "/images/no-image.png",
+    "description": "",
+    "contentFile": "projects/.md",
+    "tags": [
+      { "name": "海外", "color": "red" },
+      { "name": "起業", "color": "yellow" }
     ]
   }
 ]

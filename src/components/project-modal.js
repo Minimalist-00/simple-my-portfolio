@@ -65,7 +65,7 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="relative bg-white rounded-2xl max-h-[80vh] max-w-3xl w-full mx-auto overflow-hidden flex flex-col shadow-2xl"
+            className="relative bg-white rounded-2xl max-h-[90vh] max-w-4xl w-full mx-auto overflow-hidden flex flex-col shadow-2xl"
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
@@ -145,7 +145,7 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
                   )}
 
                   {/* マークダウンコンテンツ */}
-                  {project.content && (
+                  {project.content ? (
                     <div className="prose prose-sm max-w-none markdown-content">
                       <ReactMarkdown
                         rehypePlugins={[rehypeRaw]}
@@ -222,6 +222,10 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
                       >
                         {project.content}
                       </ReactMarkdown>
+                    </div>
+                  ) : (
+                    <div className="text-center py-10 text-gray-400">
+                      <p className="text-lg">No Contents</p>
                     </div>
                   )}
                 </div>
