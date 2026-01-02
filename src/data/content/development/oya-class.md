@@ -48,7 +48,3 @@
    - お母さん世代でも分かりやすい配置 + デザイン
 4. 配色
    - 「Color Hunt」「coolors」などのサイトを参考
-
-## 発表で使用したスライド
-
-[発表と提出に使用した資料（作者：中川）](https://drive.google.com/file/d/1rHG9vxHZVy4GdZu9wL4i0g_W-VnuvCKg/view?usp=sharing)

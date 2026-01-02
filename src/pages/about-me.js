@@ -10,32 +10,32 @@ const timelineData = [
   {
     date: '2021.04',
     title: '富山県立大学 工学部 情報システム工学科 入学',
-    description: '2022年12月に授業をきっかけにWeb開発をはじめる',
     logo: '/images/logo_tpu.png'
   },
   {
     date: '2021.09 - 2023.06',
     title: '星乃珈琲店 アルバイト',
     description:
-      'お客様や従業員との接し方を学び、人への気配りやコミュニケーション能力を磨いてきた。2023年にはバイトリーダーを務め、新人指導及び教育を担当'
+      'お客様や従業員との接し方を学び、人への気配りやコミュニケーション能力を磨いてきた。2023年にはバイトリーダーを務め、新人指導及び教育を担当。またドリップを習得'
   },
   {
     date: '2022.10 - ',
     title: '学生団体「POLYGON」 加入',
-    description: '情報分野に興味のある学生が集う学生団体に加入',
+    description:
+      '情報分野に興味のある学生が集う学生団体に加入。IoT開発プロジェクトやハッカソンに積極的に参加。また、後述する富山県庁DX推進の業務にアサイン',
     logo: '/images/logo_polygon.png'
   },
   {
     date: '2023.04 - 2026.03',
     title: '富山県庁 DX推進サポーター 任命',
     description:
-      '会計年度任用職員として雇用され、学生視点からの助言・技術的な支援や、業務改善を通じて県庁のDX推進を行う。2024年10月から1年間リーダーを務めた。kintone、FormBridge、Power Automateを活用した業務改善や、MS365普及促進のための情報発信、生成AIの普及やRAGを用いた財政課の予算要求参照RAGシステムの企画・開発などを行ってきた。'
+      '会計年度任用職員として雇用され、学生視点からの助言・技術的な支援や、業務改善を通じて県庁のDX推進を行う。2024年10月から1年間リーダーを務めた。kintoneやPower Automateを活用した業務改善、財政課の予算要求参照RAGシステムの企画・開発などを担当。'
   },
   {
     date: '2023.08',
     title: '株式会社CARTA HOLDINGS サマーインターン「Treasure」 参加',
     description:
-      'サマーインターン「Treasure」に参加（3week）。前半 講義 / 後半 チームで企画･開発。最終発表では フロントエンド賞 を受賞',
+      '3週間のサマーインターン「Treasure」に参加。前半に講義でインプットし、後半はチームでハッカソン形式で企画･開発。最終発表ではフロントエンド賞を受賞',
     logo: '/images/logo_carta.jpg'
   },
   {
@@ -43,20 +43,21 @@ const timelineData = [
     title:
       'エキサイトホールディングス株式会社 サマーインターン「Booost!!!」 参加',
     description:
-      'サマーインターン「Booost!!!」に参加（5day）。ヘルスケア事業のお悩み相談サービスのレコメンドシステムをチームで企画･開発',
+      '1週間のサマーインターン「Booost!!!」に参加。ヘルスケア事業のお悩み相談サービスのレコメンドシステムをチームで企画･開発',
     logo: '/images/logo_excite.png'
   },
   {
     date: '2023.10 - 2027.03',
     title: '岩本・河崎研究室（SIDLab）配属',
-    description: '',
+    description:
+      '研究活動や外部と連携したプロジェクト、KGリーダーで後輩の育成などを行う',
     logo: '/images/logo_sidlab.svg'
   },
   {
     date: '2024.02 - 2024.03',
     title: '大学事務局 アルバイト',
     description:
-      '学生団体POLYGONの取り組みとして、アルバイトの勤怠管理DXを行った。具体的には、総務課へのヒアリング、業務フローの見直し、MS製品（PowerAutomateなど）を使用したシステムの実装などを担当'
+      '学生団体POLYGONの取り組みとして、アルバイトの勤怠管理DXを行った。総務課へのヒアリング、業務フローの見直し、Power Automateを使用したシステムの実装を行った'
   },
   {
     date: '2025.03',
@@ -68,6 +69,12 @@ const timelineData = [
     title:
       '富山県立大学 大学院 工学研究科 電子・情報工学専攻 博士前期課程 入学',
     description: ''
+  },
+  {
+    date: '2026.04 - 2027.03',
+    title: 'フィリピン・カナダへ留学',
+    description:
+      '1年間休学し、夢の実現のためフィリピンで4ヶ月間、カナダで7ヶ月間留学を予定'
   }
 ]
 
@@ -158,6 +165,11 @@ const backendSkills = [
     title: 'Python',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
     level: 3
+  },
+  {
+    title: 'GraphQL',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
+    level: 2
   },
   {
     title: 'Postgre SQL',
@@ -430,63 +442,60 @@ const AboutMe = () => (
   <Layout title="About Me">
     <div>
       <div>
-        <h3 className="text-xl mb-2 font-bold">Development Skills</h3>
+        <h3 className="text-xl mb-2 font-bold">My Skills</h3>
         <p className="text-[15px] text-gray-700 pb-4">
-          2022年12月より。HTML、CSS、JS/TS、CSSフレームワーク、React、Next.jsを使用。技育CAMPハッカソンで優秀賞、アドバンスで大賞受賞。CARTA
-          HOLDINGSインターンでUI/UX担当。
+          2022年12月より主にWebアプリケーション開発を行っている。最近はクラウドサービス、ゲーム制作、動画編集スキルを伸ばしている
         </p>
 
         {/* Frontend */}
         <h5 className="text-lg font-bold pb-2">Frontend</h5>
         <p className="text-[15px] text-gray-700 pb-4">
-          2022年12月より。HTML、CSS、JS/TS、CSSフレームワーク、React、Next.jsを使用。技育CAMPハッカソンで優秀賞、アドバンスで大賞受賞。CARTA
-          HOLDINGSインターンでUI/UX担当。
+          Next.jsを用いた開発を主としている。ハッカソンで3度受賞し、インターンや個人開発で多くの経験を積んでいる
         </p>
         <SkillCard skills={frontendSkills} />
 
         {/* Backend */}
         <h5 className="text-lg font-bold pb-2 pt-4">Backend</h5>
         <p className="text-[15px] text-gray-700 pb-4">
-          2023年8月より。Go、GraphQL、Docker、Firebase、Supabaseを使用。ハッカソンでGo（Echo、GORM）を用いたREST
-          API開発全般を担当。Spotify Web
-          APIやSupabaseを用いた研究用アプリケーション開発。
+          GoやTSを用いて簡単なREST
+          API開発からデータベース接続ができる。またオープンのAPI（例: Spotify
+          Web
+          APIや補助金API、SlackAPIなど）を用いて簡単なアプリケーション開発ができる
         </p>
         <SkillCard skills={backendSkills} />
 
         {/* General */}
         <h5 className="text-lg font-bold pb-2 pt-4">General</h5>
         <p className="text-[15px] text-gray-700 pb-4">
-          大学の授業や基礎学習で使用した言語。
+          大学の授業や個人で触れたことのある言語。現在ゲーム制作のためC#を学習中
         </p>
         <SkillCard skills={generalSkills} />
 
         {/* Cloud */}
         <h5 className="text-lg font-bold pb-2 pt-4">Cloud</h5>
         <p className="text-[15px] text-gray-700 pb-4">
-          2025年3月より。研究室のインフラ整備としてAWSクラウド環境整備を担当。Amazon
-          BedrockやAzure OpenAI Serviceを用いた開発を学習中。
+          行政や大学授業のためにクラウド環境を用いた開発経験がある。主にデプロイ、関数アプリ、データベース、AIサービスの整備を担当
         </p>
         <SkillCard skills={cloudSkills} />
 
         {/* Design */}
         <h5 className="text-lg font-bold pb-2 pt-4">Design</h5>
         <p className="text-[15px] text-gray-700 pb-4">
-          UI/UX面に強い関心があり、Figmaを使用したデザインから実装まで一貫して対応。MUI、Tailwind、Mantineなどのライブラリを活用。
+          Figmaを使用したデザインからスタイリングまでを行う。スタイリングにはTailwindCSSやMUIを使用している
         </p>
         <SkillCard skills={designSkills} />
 
         {/* DX推進 */}
         <h5 className="text-lg font-bold pb-2 pt-4">DX推進</h5>
         <p className="text-[15px] text-gray-700 pb-4">
-          富山県庁DX推進サポーターとしてチームリーダーを務める（2023年4月〜現在）。kintone、FormBridge、Power
-          Automateを活用した業務改善。MS365普及促進のための情報発信。生成AI活用チーム責任者としてRAGを用いた庁内検索システムの企画・開発。
+          富山県庁において業務の自動化や効率化のために使用してきたツール
         </p>
         <SkillCard skills={dxSkills} />
 
         {/* Other */}
         <h5 className="text-lg font-bold pb-2 pt-4">Other</h5>
         <p className="text-[15px] text-gray-700 pb-4">
-          バージョン管理、データベース、コンテナ技術、動画編集など幅広いツールを活用。
+          バージョン管理、プロジェクト管理、動画･画像編集やゲーム制作などに幅広いツールを活用している
         </p>
         <SkillCard skills={otherSkills} />
       </div>

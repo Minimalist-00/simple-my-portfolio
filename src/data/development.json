@@ -2,7 +2,7 @@
   {
     "id": "grant-finder",
     "title": "Grant Finder",
-    "thumbnail": "/images/no-image.png",
+    "thumbnail": "/images/development/grant-finder/デジタル庁.png",
     "description": "JグランツAPIから補助金情報を自動取得・収集するシステム",
     "contentFile": "development/grant-finder.md",
     "tags": [
@@ -26,7 +26,7 @@
   {
     "id": "game-gallery",
     "title": "Game Gallery",
-    "thumbnail": "/images/development/game-gallery/gallery_1.png",
+    "thumbnail": "/images/development/game-gallery/game-gallery-サムネ.png",
     "description": "自分がプレイしているゲームや好きなゲームをTwitterのフォロワーに紹介するために制作したWebアプリケーション",
     "contentFile": "development/game-gallery.md",
     "tags": [
@@ -52,7 +52,7 @@
   {
     "id": "zundamon-x",
     "title": "ZUNDAMON-X",
-    "thumbnail": "/images/development/zundamon-x/ずんだもん.png",
+    "thumbnail": "/images/development/zundamon-x/ZUNDAMON-X-サムネ.png",
     "description": "海外のYouTubeの動画を可愛い声でリアルタイム吹き替えする",
     "contentFile": "development/zundamon-x.md",
     "tags": [
