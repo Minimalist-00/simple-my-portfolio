@@ -53,14 +53,14 @@ const Home = () => {
       <div>
         {/* 挨拶 */}
         <div className="rounded-lg mb-6 p-3 text-center bg-white/50 glass">
-          こんにちは！自分の弱みを糧にして生きている修士1年生です！💪
+          {t('greeting')}
         </div>
 
         {/* プロフィール */}
         <div className="md:flex">
           <div className="flex-grow">
             <h2 className="text-4xl font-bold">Koki Nakagawa</h2>
-            <p>日本 / 情報工学修士 / エンジニア</p>
+            <p>{t('profile.role')}</p>
           </div>
           <div className="flex-shrink-0 mt-4 md:mt-0 md:ml-6 text-center">
             <div className="inline-block w-[100px] h-[100px] border-2 border-white/80 rounded-full overflow-hidden">
@@ -76,16 +76,11 @@ const Home = () => {
 
         {/* 自己紹介 */}
         <Section delay={0.1}>
-          <h3 className="section-title">自己紹介</h3>
-          <p className="text-justify hyphens-auto">
-            富山県立大学で情報工学を専攻する修士1年生
-            <br />
-            中学から高校時代、スプラトゥーンというゲームを5000時間プレイ。授業中は爆睡、家に帰ってからは朝までゲームをしていた元ダメ人間（自称）
-            <br />
-            そんな自分に嫌気がさし、「自分を変えよう」と決心。
-            <br />
-            2025年に大学院進学し、2026年に夢の実現のため1年の海外留学を予定
-          </p>
+          <h3 className="section-title">{t('selfIntro.title')}</h3>
+          <p
+            className="text-justify hyphens-auto"
+            dangerouslySetInnerHTML={{ __html: t('selfIntro.content') }}
+          />
         </Section>
 
         <Section delay={0.2}>
