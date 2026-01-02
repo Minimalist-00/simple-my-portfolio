@@ -10,6 +10,16 @@
     ]
   },
   {
+    "title": "関西・大阪万博登壇",
+    "thumbnail": "/images/大阪万博2025_登壇.jpg",
+    "description": "若者に向けて「自分を変えるということ」というテーマで登壇",
+    "contentFile": "projects/大阪万博登壇.md",
+    "tags": [
+      { "name": "onStage", "color": "yellow" },
+      { "name": "プレゼン", "color": "green" }
+    ]
+  },
+  {
     "title": "修士研究",
     "thumbnail": "/images/no-image.png",
     "description": "修士研究: スマートフォンにおける後悔使用予測",
@@ -29,16 +39,6 @@
       { "name": "研究室", "color": "blue" },
       { "name": "研究", "color": "blue" },
       { "name": "社会心理学", "color": "green" }
-    ]
-  },
-  {
-    "title": "関西・大阪万博登壇",
-    "thumbnail": "/images/大阪万博2025_登壇.jpg",
-    "description": "若者に向けて「自分を変えるということ」というテーマで登壇",
-    "contentFile": "projects/大阪万博登壇.md",
-    "tags": [
-      { "name": "onStage", "color": "yellow" },
-      { "name": "プレゼン", "color": "green" }
     ]
   },
   {

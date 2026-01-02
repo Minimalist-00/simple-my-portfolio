@@ -1,13 +1,10 @@
-## プレゼン資料
+## 概要
 
-[Treasure\_ショータニ](https://www.canva.com/design/DAFsblLLyZQ/6dnKoV7k_r5X0u4G1A7vLA/view?utm_content=DAFsblLLyZQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+インターンシップで、聖地巡礼をしたい外国人と日本にいる共通のアニメ好きを繋ぐマッチングサービスの開発をした。異なる背景のメンバーとのコミュニケーションに苦労しながらも、小さな PR でのコードレビューや MVP 開発でユーザー価値を追求。フロントエンド賞を受賞
 
-## 意識したこと・取り組んだこと
+期間: 2023 年 8 月・3 週間
 
-- 外国人がメインターゲットなため、PintarestやDribbbleなどで海外のモダンなUIサイトを参考にしてFigmaでデザインを行った
-- 時流などから、どのようなユーザーにどのようなニーズがあるかというところから計画を行った
-- 効率的なデータ取得のためにGraphQLを採用した
-- 短い開発期間だったため、MVP（Minimum Viable Product）を追求して開発を行った
+役割: フロントエンド・デザイン担当
 
 ## アプリ画面
 
@@ -36,3 +33,14 @@
 ![ガイド選択3](</images/development/seichi-cross-over/2023-08-28_(15).png>)
 
 ![ガイド選択4](</images/development/seichi-cross-over/2023-08-28_(16).png>)
+
+## 意識したこと・取り組んだこと
+
+- 外国人がメインターゲットなため、PintarestやDribbbleなどで海外のモダンなUIサイトを参考にしてFigmaでデザインを行った
+- 時流などから、どのようなユーザーにどのようなニーズがあるかというところから計画を行った
+- 効率的なデータ取得のためにGraphQLを採用した
+- 短い開発期間だったため、MVP（Minimum Viable Product）を追求して開発を行った
+
+## プレゼン資料
+
+[Treasure\_ショータニ](https://www.canva.com/design/DAFsblLLyZQ/6dnKoV7k_r5X0u4G1A7vLA/view?utm_content=DAFsblLLyZQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)

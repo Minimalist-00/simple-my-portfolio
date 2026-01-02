@@ -124,6 +124,11 @@ const awardData = [
     title: 'UBI研究会 Japan UBI Symposium2025 研究発表',
     description:
       '「音楽嗜好の共有を通じた自己開示が受容性に及ぼす影響」というテーマでポスター発表'
+  },
+  {
+    date: '2025.07.19',
+    title: '大阪・関西万博 フューチャライフビレッジ 登壇',
+    description: '若者に向けて「自分を変えるということ」というテーマで登壇'
   }
 ]
 
@@ -210,6 +215,16 @@ const generalSkills = [
   {
     title: 'Java',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+    level: 2
+  },
+  {
+    title: 'MATLAB',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg',
+    level: 2
+  },
+  {
+    title: 'Arduino',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg',
     level: 2
   }
 ]
