@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const username = minimalist30
+  const username = 'minimalist30'
   const page = req.query.page || 1
 
   try {
