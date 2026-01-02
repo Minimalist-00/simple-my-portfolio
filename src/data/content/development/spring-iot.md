@@ -18,9 +18,9 @@
 
 4. おみくじ（カメラの前で手を合わせるとおみくじ開始）
 
-![BME280](/images/development/spring-iot/IMG_9972.jpg)
+## アプリ画面
 
-![アプリ画面](/images/development/spring-iot/Untitled.png)
+![アプリ画面](/images/development/spring-iot/SensingDXCenter.png)
 
 ## 工夫した点 + 頑張った点
 

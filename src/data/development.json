@@ -72,7 +72,7 @@
     "skills": ["react", "mui", "azure", "nodejs"]
   },
   {
-    "title": "Grant Finder",
+    "title": "補助金定期取得システム",
     "thumbnail": "/images/development/grant-finder/デジタル庁.png",
     "description": "JグランツAPIから補助金情報を自動取得・収集するシステム",
     "contentFile": "development/grant-finder.md",

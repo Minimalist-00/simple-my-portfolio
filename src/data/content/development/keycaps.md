@@ -8,6 +8,8 @@
 
 役割: フロントエンド・デザイン
 
+GitHub: https://github.com/Minimalist-00/Key-Caps
+
 URL: https://key-caps.vercel.app/
 
 ## アプリ画面

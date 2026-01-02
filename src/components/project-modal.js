@@ -68,168 +68,211 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
             className="relative bg-white rounded-2xl max-h-[90vh] max-w-4xl w-full mx-auto overflow-hidden flex flex-col shadow-2xl"
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-6 border-b border-gray-200">
-              <h2 className="text-2xl font-bold">{project.title}</h2>
-              <button
-                onClick={onClose}
-                className="text-gray-500 hover:text-gray-700 transition-colors"
-                aria-label="Close modal"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+            <div className="p-4">
+              <div className="flex items-center justify-between max-w-[605px] mx-auto w-full">
+                <h2 className="text-2xl font-bold">{project.title}</h2>
+                <button
+                  onClick={onClose}
+                  className="text-gray-500 hover:text-gray-700 transition-colors"
+                  aria-label="Close modal"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
 
             {/* Body */}
-            <div className="overflow-y-auto p-6">
-              {isLoading ? (
-                <div className="flex justify-center py-10">
-                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-500"></div>
-                </div>
-              ) : (
-                <div className="space-y-4">
-                  {/* タグセクション */}
-                  {project.tags && project.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag, index) => (
-                        <span
-                          key={index}
-                          className={`px-3 py-1 rounded-full text-sm font-medium ${
-                            tag.color === 'blue'
-                              ? 'bg-blue-100 text-blue-800'
-                              : tag.color === 'green'
-                                ? 'bg-green-100 text-green-800'
-                                : tag.color === 'red'
-                                  ? 'bg-red-100 text-red-800'
-                                  : tag.color === 'yellow'
-                                    ? 'bg-yellow-100 text-yellow-800'
-                                    : tag.color === 'purple'
-                                      ? 'bg-purple-100 text-purple-800'
-                                      : tag.color === 'pink'
-                                        ? 'bg-pink-100 text-pink-800'
-                                        : tag.color === 'orange'
-                                          ? 'bg-orange-100 text-orange-800'
-                                          : tag.color === 'cyan'
-                                            ? 'bg-cyan-100 text-cyan-800'
-                                            : 'bg-gray-100 text-gray-800'
-                          }`}
-                        >
-                          {tag.name}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-
-                  {/* スキルアイコン */}
-                  {project.skills && project.skills.length > 0 && (
-                    <div className="mt-4">
-                      <h3 className="text-sm font-bold mb-2">技術スタック</h3>
-                      <div>
-                        <img
-                          src={`https://skillicons.dev/icons?i=${project.skills.join(',')}`}
-                          alt="Skill Icons"
-                        />
-                      </div>
-                    </div>
-                  )}
-
-                  {/* マークダウンコンテンツ */}
-                  {project.content ? (
-                    <div className="prose prose-sm max-w-none markdown-content">
-                      <ReactMarkdown
-                        rehypePlugins={[rehypeRaw]}
-                        components={{
-                          h1: ({ children }) => (
-                            <h1 className="text-lg font-bold mt-6 mb-3">
-                              {children}
-                            </h1>
-                          ),
-                          h2: ({ children }) => (
-                            <h2 className="text-md font-bold mt-5 mb-2">
-                              {children}
-                            </h2>
-                          ),
-                          h3: ({ children }) => (
-                            <h3 className="text-sm font-bold mt-4 mb-2">
-                              {children}
-                            </h3>
-                          ),
-                          p: ({ children }) => (
-                            <p className="mb-2 leading-relaxed">{children}</p>
-                          ),
-                          ul: ({ children }) => (
-                            <ul className="list-disc pl-5 mb-2 space-y-1">
-                              {children}
-                            </ul>
-                          ),
-                          ol: ({ children }) => (
-                            <ol className="list-decimal pl-5 mb-2 space-y-1">
-                              {children}
-                            </ol>
-                          ),
-                          li: ({ children }) => (
-                            <li className="mb-1">{children}</li>
-                          ),
-                          hr: () => <hr className="my-4 border-gray-300" />,
-                          img: ({ src, alt, className }) => (
-                            <img
-                              src={src}
-                              alt={alt}
-                              className={
-                                className ||
-                                'max-w-[70%] h-auto my-3 mx-auto rounded-md'
-                              }
-                            />
-                          ),
-                          div: ({ node, ...props }) => <div {...props} />,
-                          code: ({ inline, children }) =>
-                            inline ? (
-                              <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm whitespace-nowrap">
-                                {children}
-                              </code>
-                            ) : (
-                              <code className="block bg-gray-100 p-3 rounded overflow-x-auto mb-2">
-                                {children}
-                              </code>
-                            ),
-                          pre: ({ children }) => (
-                            <pre className="bg-gray-100 p-3 rounded overflow-x-auto mb-2">
-                              {children}
-                            </pre>
-                          ),
-                          a: ({ href, children }) => (
-                            <a
-                              href={href}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-blue-600 hover:underline"
-                            >
-                              {children}
-                            </a>
-                          )
-                        }}
-                      >
-                        {project.content}
-                      </ReactMarkdown>
+            <div className="overflow-y-auto">
+              <div className="p-6">
+                <div className="max-w-[605px] mx-auto w-full">
+                  {isLoading ? (
+                    <div className="flex justify-center py-10">
+                      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-500"></div>
                     </div>
                   ) : (
-                    <div className="text-center py-10 text-gray-400">
-                      <p className="text-lg">No Contents</p>
+                    <div className="space-y-4">
+                      {/* タグセクション */}
+                      {project.tags && project.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                          {project.tags.map((tag, index) => (
+                            <span
+                              key={index}
+                              className={`px-3 py-1 rounded-full text-sm font-medium ${
+                                tag.color === 'blue'
+                                  ? 'bg-blue-100 text-blue-800'
+                                  : tag.color === 'green'
+                                    ? 'bg-green-100 text-green-800'
+                                    : tag.color === 'red'
+                                      ? 'bg-red-100 text-red-800'
+                                      : tag.color === 'yellow'
+                                        ? 'bg-yellow-100 text-yellow-800'
+                                        : tag.color === 'purple'
+                                          ? 'bg-purple-100 text-purple-800'
+                                          : tag.color === 'pink'
+                                            ? 'bg-pink-100 text-pink-800'
+                                            : tag.color === 'orange'
+                                              ? 'bg-orange-100 text-orange-800'
+                                              : tag.color === 'cyan'
+                                                ? 'bg-cyan-100 text-cyan-800'
+                                                : 'bg-gray-100 text-gray-800'
+                              }`}
+                            >
+                              {tag.name}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* スキルアイコン */}
+                      {project.skills && project.skills.length > 0 && (
+                        <div className="mt-4">
+                          <h3 className="text-sm font-bold mb-2">
+                            技術スタック
+                          </h3>
+                          <div>
+                            <img
+                              src={`https://skillicons.dev/icons?i=${project.skills.join(',')}`}
+                              alt="Skill Icons"
+                            />
+                          </div>
+                        </div>
+                      )}
+
+                      {/* マークダウンコンテンツ */}
+                      {project.content ? (
+                        <div className="prose prose-sm max-w-none markdown-content">
+                          <ReactMarkdown
+                            rehypePlugins={[rehypeRaw]}
+                            components={{
+                              h1: ({ children }) => (
+                                <h1 className="text-lg font-bold mt-6 mb-3">
+                                  {children}
+                                </h1>
+                              ),
+                              h2: ({ children }) => (
+                                <h2 className="text-md font-bold mt-5 mb-2">
+                                  {children}
+                                </h2>
+                              ),
+                              h3: ({ children }) => (
+                                <h3 className="text-sm font-bold mt-4 mb-2">
+                                  {children}
+                                </h3>
+                              ),
+                              p: ({ children }) => {
+                                // URLを検出してリンク化する関数
+                                const processText = text => {
+                                  if (typeof text !== 'string') return text
+                                  const urlRegex = /(https?:\/\/[^\s]+)/g
+                                  const parts = text.split(urlRegex)
+                                  return parts.map((part, index) => {
+                                    if (part.match(urlRegex)) {
+                                      return (
+                                        <a
+                                          key={index}
+                                          href={part}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          className="text-blue-600 hover:underline"
+                                        >
+                                          {part}
+                                        </a>
+                                      )
+                                    }
+                                    return part
+                                  })
+                                }
+
+                                return (
+                                  <p className="mb-2 leading-relaxed">
+                                    {Array.isArray(children)
+                                      ? children.map((child, i) =>
+                                          typeof child === 'string'
+                                            ? processText(child)
+                                            : child
+                                        )
+                                      : typeof children === 'string'
+                                        ? processText(children)
+                                        : children}
+                                  </p>
+                                )
+                              },
+                              ul: ({ children }) => (
+                                <ul className="list-disc pl-5 mb-2 space-y-1">
+                                  {children}
+                                </ul>
+                              ),
+                              ol: ({ children }) => (
+                                <ol className="list-decimal pl-5 mb-2 space-y-1">
+                                  {children}
+                                </ol>
+                              ),
+                              li: ({ children }) => (
+                                <li className="mb-1">{children}</li>
+                              ),
+                              hr: () => <hr className="my-4 border-gray-300" />,
+                              img: ({ src, alt, className }) => (
+                                <img
+                                  src={src}
+                                  alt={alt}
+                                  className={
+                                    className ||
+                                    'max-w-[85%] h-auto my-3 mx-auto rounded-md'
+                                  }
+                                />
+                              ),
+                              div: ({ node, ...props }) => <div {...props} />,
+                              code: ({ inline, children }) =>
+                                inline ? (
+                                  <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm whitespace-nowrap">
+                                    {children}
+                                  </code>
+                                ) : (
+                                  <code className="block bg-gray-100 p-3 rounded overflow-x-auto mb-2">
+                                    {children}
+                                  </code>
+                                ),
+                              pre: ({ children }) => (
+                                <pre className="bg-gray-100 p-3 rounded overflow-x-auto mb-2">
+                                  {children}
+                                </pre>
+                              ),
+                              a: ({ href, children }) => (
+                                <a
+                                  href={href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-blue-600 hover:underline"
+                                >
+                                  {children}
+                                </a>
+                              )
+                            }}
+                          >
+                            {project.content}
+                          </ReactMarkdown>
+                        </div>
+                      ) : (
+                        <div className="text-center py-10 text-gray-400">
+                          <p className="text-lg">No Contents</p>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
-              )}
+              </div>
             </div>
           </motion.div>
         </div>
