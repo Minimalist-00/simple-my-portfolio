@@ -460,18 +460,6 @@ const StarIcon = ({ filled }) => (
   </svg>
 )
 
-// 星を生成する関数
-const generateStars = level => {
-  const maxLevel = 5
-  const stars = []
-
-  for (let i = 1; i <= maxLevel; i++) {
-    stars.push(<StarIcon key={i} filled={i <= level} />)
-  }
-
-  return stars
-}
-
 const AboutMe = () => (
   <Layout title="About Me">
     <div>

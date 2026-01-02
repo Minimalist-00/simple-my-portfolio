@@ -200,7 +200,7 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
                                 return (
                                   <p className="mb-2 leading-relaxed">
                                     {Array.isArray(children)
-                                      ? children.map((child, i) =>
+                                      ? children.map((child, _i) =>
                                           typeof child === 'string'
                                             ? processText(child)
                                             : child
@@ -235,7 +235,9 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
                                   }
                                 />
                               ),
-                              div: ({ node, ...props }) => <div {...props} />,
+                              div: ({ node: _node, ...props }) => (
+                                <div {...props} />
+                              ),
                               code: ({ inline, children }) =>
                                 inline ? (
                                   <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm whitespace-nowrap">

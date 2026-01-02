@@ -9,17 +9,9 @@ import Section from './section'
  *
  * @param {Array} items - 表示するアイテムデータの配列
  * @param {number} delay - アニメーション遅延の基準値(デフォルト: 0)
- * @param {Array} columns - レスポンシブなカラム数の配列(デフォルト: [1, 1, 2])
- * @param {number} gap - グリッド間のギャップ(デフォルト: 6)
  * @param {string} apiEndpoint - APIエンドポイント(デフォルト: '/api/development')
  */
-const CardList = ({
-  items,
-  delay = 0,
-  columns = [1, 1, 2],
-  gap = 6,
-  apiEndpoint = '/api/development'
-}) => {
+const CardList = ({ items, delay = 0, apiEndpoint = '/api/development' }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
   const [isLoadingContent, setIsLoadingContent] = useState(false)
