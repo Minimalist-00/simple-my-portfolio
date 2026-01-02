@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { WorkGridItem } from './grid-item'
 import ProjectModal from './project-modal'
@@ -16,6 +17,9 @@ const CardList = ({ items, delay = 0, apiEndpoint = '/api/development' }) => {
   const [selectedProject, setSelectedProject] = useState(null)
   const [isLoadingContent, setIsLoadingContent] = useState(false)
 
+  const router = useRouter()
+  const { locale } = router
+
   const handleCardClick = async item => {
     // モーダルを開く
     setSelectedProject(item)
@@ -25,7 +29,9 @@ const CardList = ({ items, delay = 0, apiEndpoint = '/api/development' }) => {
     if (item.id) {
       setIsLoadingContent(true)
       try {
-        const response = await fetch(`${apiEndpoint}?pageId=${item.id}`)
+        const response = await fetch(
+          `${apiEndpoint}?pageId=${item.id}&locale=${locale}`
+        )
         const data = await response.json()
 
         if (response.ok) {

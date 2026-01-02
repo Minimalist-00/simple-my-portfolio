@@ -1,0 +1,12 @@
+## 概要
+
+デジタル庁のJグランツAPIから補助金情報を自動取得し、Azure Blob Storageに保存するシステム
+
+GitHub: https://github.com/Minimalist-00/get-subsidy-api
+
+**主な機能:**
+
+- 補助金一覧と詳細情報の自動取得
+- 重複チェック機能（既存データとの差分取得）
+- PDFファイルなど重いデータを除外して軽量化
+- Azure Functionsによる定期実行

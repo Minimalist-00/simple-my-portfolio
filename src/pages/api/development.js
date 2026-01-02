@@ -9,11 +9,11 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { pageId } = req.query
+    const { pageId, locale = 'ja' } = req.query
 
     // pageIdが指定されている場合は、そのページの詳細を取得
     if (pageId) {
-      const pageData = getPageWithContent(pageId, 'development.json')
+      const pageData = getPageWithContent(pageId, 'development.json', locale)
       if (!pageData) {
         return res.status(404).json({ error: 'Project not found' })
       }
