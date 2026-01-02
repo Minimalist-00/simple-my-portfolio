@@ -56,12 +56,12 @@ const Home = () => {
         </div>
 
         {/* プロフィール */}
-        <div className="md:flex">
+        <div className="sm:flex">
           <div className="flex-grow">
             <h2 className="text-4xl font-bold">Koki Nakagawa</h2>
             <p>{t('profile.role')}</p>
           </div>
-          <div className="flex-shrink-0 mt-4 md:mt-0 md:ml-6 text-center">
+          <div className="flex-shrink-0 mt-4 sm:mt-0 sm:ml-6 text-center">
             <div className="inline-block w-[100px] h-[100px] border-2 border-white/80 rounded-full overflow-hidden">
               <Image
                 src="/images/Top/koki_face.jpg"

@@ -13,7 +13,7 @@ export const LanguageToggleButton = () => {
 
   return (
     <button
-      className="relative flex items-center gap-0 rounded-full p-1 cursor-pointer transition-all duration-300 hover:opacity-80"
+      className="relative inline-flex items-center gap-0 rounded-full p-1 cursor-pointer transition-all duration-300 hover:opacity-80"
       style={{
         backgroundColor: isJa ? '#FFA500' : '#805AD5' // Orange for JA, Purple for EN
       }}

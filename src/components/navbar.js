@@ -54,7 +54,7 @@ const Navbar = props => {
 
   return (
     <nav className="fixed w-full bg-white/25 glass z-[2]" {...props}>
-      <div className="max-w-3xl mx-auto flex flex-wrap items-center justify-between py-2 pl-1.5 pr-2 md:pr-3">
+      <div className="max-w-5xl mx-auto flex items-center justify-between py-2 pl-1.5 pr-2 md:pr-3">
         <div className="flex items-center mr-5">
           <h1 className="text-lg font-bold tracking-tighter">
             <Logo />
@@ -70,7 +70,7 @@ const Navbar = props => {
           ))}
         </div>
 
-        <div className="flex-1 text-right">
+        <div className="flex-1 flex justify-end items-center">
           <LanguageToggleButton />
 
           {/* Mobile Menu Button */}
