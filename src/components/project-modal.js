@@ -28,27 +28,29 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
       document.body.style.top = `-${scrollY}px`
       document.body.style.left = '0'
       document.body.style.right = '0'
+      document.body.style.width = '100%'
 
       document.addEventListener('keydown', handleEsc)
-    }
 
-    return () => {
-      // クリーンアップ: 元のスクロール位置に戻す
-      const scrollY = document.body.style.top
-      document.body.style.position = ''
-      document.body.style.top = ''
-      document.body.style.left = ''
-      document.body.style.right = ''
-      window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      return () => {
+        // クリーンアップ: 元のスクロール位置に戻す
+        const scrollY = document.body.style.top
+        document.body.style.position = ''
+        document.body.style.top = ''
+        document.body.style.left = ''
+        document.body.style.right = ''
+        document.body.style.width = ''
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
 
-      document.removeEventListener('keydown', handleEsc)
+        document.removeEventListener('keydown', handleEsc)
+      }
     }
   }, [isOpen, onClose])
 
   return (
     <AnimatePresence>
       {isOpen && project && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-2">
           {/* Overlay with fade animation */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -68,7 +70,7 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
             className="relative bg-white rounded-2xl max-h-[90vh] max-w-4xl w-full mx-auto overflow-hidden flex flex-col shadow-2xl"
           >
             {/* Header */}
-            <div className="p-4">
+            <div className="pt-6 pb-2 px-4">
               <div className="flex items-center justify-between max-w-[605px] mx-auto w-full">
                 <h2 className="text-2xl font-bold">{project.title}</h2>
                 <button
