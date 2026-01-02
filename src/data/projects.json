@@ -7,7 +7,7 @@
     "lab": { "name": "研究室", "color": "blue" },
     "research": { "name": "研究", "color": "blue" },
     "psychology": { "name": "社会心理学", "color": "green" },
-    "leadership": { "name": "リーダーシップ", "color": "orange" },
+    "leadership": { "name": "リーダー", "color": "orange" },
     "education": { "name": "教育", "color": "cyan" },
     "ta": { "name": "TA", "color": "pink" },
     "overseas": { "name": "海外", "color": "red" },
@@ -43,10 +43,10 @@
       "tags": ["lab", "research", "psychology"]
     },
     {
-      "title": "KGリーダー",
-      "thumbnail": "/images/no-image.png",
-      "description": "",
-      "contentFile": "projects/.md",
+      "title": "ConnecTech",
+      "thumbnail": "/images/Projects/ConnecTech.png",
+      "description": "研究室内で確立した研究グループ",
+      "contentFile": "projects/ConnecTech.md",
       "tags": ["lab", "leadership"]
     },
     {

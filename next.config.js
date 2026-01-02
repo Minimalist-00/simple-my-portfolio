@@ -10,6 +10,10 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'cdn.jsdelivr.net'
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.st-note.com'
       }
     ]
   },

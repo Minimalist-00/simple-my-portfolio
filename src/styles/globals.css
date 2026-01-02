@@ -1,7 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-heading: 'M PLUS Rounded 1c', sans-serif;
+  --font-heading: 'LINE Seed JP', 'Noto Sans JP', sans-serif;
+  --font-body: 'LINE Seed JP', 'Noto Sans JP', sans-serif;
 
   --color-grassTeal: #88ccca;
   --color-light-bg: #f0e7db;
@@ -21,6 +22,7 @@
     background-color: light-dark(var(--color-light-bg), var(--color-dark-bg));
     color: light-dark(var(--color-light-text), var(--color-dark-text));
     transition: background-color 0.3s ease;
+    font-family: var(--font-body);
   }
 }
 

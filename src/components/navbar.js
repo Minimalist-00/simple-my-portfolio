@@ -8,7 +8,8 @@ const menuItems = [
   { href: '/life', label: 'Life' },
   { href: '/about-me', label: 'About Me' },
   { href: '/projects', label: 'Projects' },
-  { href: '/development', label: 'Development' }
+  { href: '/development', label: 'Development' },
+  { href: '/article', label: 'Article' }
 ]
 
 const HamburgerIcon = () => (
