@@ -36,6 +36,14 @@
       "skills": ["nextjs", "ts", "tailwindcss", "aws"]
     },
     {
+      "title": "予算要求参照システム",
+      "thumbnail": "/images/development/rag-system/architecture.png",
+      "description": "Azure OpenAIと組み合わせて、予算要求の参照を容易にするRAGシステム",
+      "contentFile": "development/rag-system.md",
+      "tags": ["backend", "team"],
+      "skills": ["python", "azure"]
+    },
+    {
       "title": "ToDo App",
       "thumbnail": "/images/no-image.png",
       "description": "授業教材としてのToDoアプリをNext.js × Azureで作成",
@@ -60,20 +68,20 @@
       "skills": ["react", "mui", "azure"]
     },
     {
-      "title": "補助金定期取得システム",
-      "thumbnail": "/images/development/grant-finder/デジタル庁.png",
-      "description": "JグランツAPIから補助金情報を自動取得・収集するシステム",
-      "contentFile": "development/grant-finder.md",
-      "tags": ["backend"],
-      "skills": ["python", "azure"]
-    },
-    {
       "title": "KeyCaps",
       "thumbnail": "/images/development/keycaps/KeyCaps.png",
       "description": "初めて制作したショッピングサイトを模倣したWebアプリ",
       "contentFile": "development/keycaps.md",
       "tags": ["frontend", "design", "personal"],
       "skills": ["react", "javascript", "bootstrap", "mui"]
+    },
+    {
+      "title": "補助金定期取得システム",
+      "thumbnail": "/images/development/grant-finder/デジタル庁.png",
+      "description": "JグランツAPIから補助金情報を自動取得・収集するシステム",
+      "contentFile": "development/grant-finder.md",
+      "tags": ["backend"],
+      "skills": ["python", "azure"]
     },
     {
       "title": "春プロジェクト IoT班",
@@ -96,14 +104,6 @@
       "description": "参議院選挙の投票結果報告をForms・PowerAutomateで自動化",
       "contentFile": "development/参議院選挙DX.md",
       "tags": ["team"]
-    },
-    {
-      "title": "予算要求参照システム",
-      "thumbnail": "/images/development/rag-system/architecture.png",
-      "description": "Azure OpenAIと組み合わせて、予算要求の参照を容易にするRAGシステム",
-      "contentFile": "development/rag-system.md",
-      "tags": ["backend", "team"],
-      "skills": ["python", "azure"]
     }
   ]
 }
