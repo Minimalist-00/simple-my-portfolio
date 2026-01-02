@@ -50,7 +50,7 @@ const CardList = ({ items, delay = 0, apiEndpoint = '/api/development' }) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(min(250px,100%),1fr))] gap-4">
         {items.map((item, index) => (
           <Section key={item.id} delay={delay + index * 0.1}>
             <WorkGridItem

@@ -412,7 +412,7 @@ const SkillCard = ({ skills }) => {
   }
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(min(150px,100%),150px))] gap-4 justify-center">
       {skills.map((card, index) => (
         <div
           key={index}

@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const username = process.env.NEXT_PUBLIC_NOTE_USERNAME || 'minimalist_dev'
+  const username = minimalist30
   const page = req.query.page || 1
 
   try {
