@@ -34,7 +34,7 @@ const Projects = () => {
     return (
       <Layout title="Projects">
         <div>
-          <h3 className="text-xl mb-4 font-bold">研究室での活動</h3>
+          <h3 className="text-xl mb-4 font-bold">これまでの活動</h3>
           <div className="flex justify-center py-10">
             <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-teal-500"></div>
           </div>
