@@ -1,3 +1,6 @@
+'use client'
+
+import { AnimatePresence, motion } from 'framer-motion'
 import NextLink from 'next/link'
 import { useState } from 'react'
 import { LanguageToggleButton } from './language-toggle-button'
@@ -48,6 +51,33 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   )
 }
 
+const menuVariants = {
+  hidden: { opacity: 0, scale: 0.95, y: -20 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 300,
+      damping: 24,
+      staggerChildren: 0.07,
+      delayChildren: 0.1
+    }
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.95,
+    y: -20,
+    transition: { duration: 0.2 }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: { opacity: 1, x: 0 }
+}
+
 const Navbar = props => {
   const { path } = props
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -84,27 +114,31 @@ const Navbar = props => {
             </button>
 
             {/* Mobile Menu Dropdown */}
-            {isMenuOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10">
-                <NextLink
-                  href="/"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  onClick={() => setIsMenuOpen(false)}
+            <AnimatePresence>
+              {isMenuOpen && (
+                <motion.div
+                  key="mobile-menu"
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  variants={menuVariants}
+                  className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 border border-gray-100"
                 >
-                  About
-                </NextLink>
-                {menuItems.map(item => (
-                  <NextLink
-                    key={item.href}
-                    href={item.href}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.label}
-                  </NextLink>
-                ))}
-              </div>
-            )}
+                  {menuItems.map(item => (
+                    <motion.div key={item.href} variants={itemVariants}>
+                      <NextLink
+                        key={item.href}
+                        href={item.href}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.label}
+                      </NextLink>
+                    </motion.div>
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </div>
