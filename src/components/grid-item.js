@@ -36,12 +36,12 @@ export const WorkGridItem = ({
           src={thumbnail}
           alt={title}
           className="rounded-xl object-cover w-full h-auto aspect-video"
-          width={400}
-          height={225}
+          width={320}
+          height={180}
           style={{ objectFit: 'cover' }}
         />
       </div>
-      <p className="mt-2 text-xl">{title}</p>
+      <p className="mt-1 text-lg">{title}</p>
       <p className="text-sm">{children}</p>
     </div>
   </div>

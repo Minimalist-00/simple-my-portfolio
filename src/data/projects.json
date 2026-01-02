@@ -2,23 +2,34 @@
   {
     "id": "project-1",
     "title": "富山県庁 DX推進サポーター",
-    "thumbnail": "/images/no-image.png",
+    "thumbnail": "/images/DXサポーター成果発表_2024_1.jpeg",
     "description": "富山県庁のデジタル推進室内で「DX推進サポーター」として雇用（非常勤職員）",
     "contentFile": "projects/DXSupporter.md",
     "tags": [
-      { "name": "研究", "color": "blue" },
-      { "name": "AI", "color": "green" }
+      { "name": "行政", "color": "blue" },
+      { "name": "DX", "color": "green" }
     ]
   },
   {
     "id": "project-2",
     "title": "卒業研究",
-    "thumbnail": "/images/no-image.png",
+    "thumbnail": "/images/UBISymposium2025.jpeg",
     "description": "卒業研究: 音楽嗜好の共有を通じた段階的な自己開示が受容性に与える効果の検証",
     "contentFile": "projects/Research.md",
     "tags": [
       { "name": "研究", "color": "blue" },
-      { "name": "AI", "color": "green" }
+      { "name": "社会心理学", "color": "green" }
+    ]
+  },
+  {
+    "id": "project-3",
+    "title": "関西・大阪万博登壇",
+    "thumbnail": "/images/大阪万博2025_登壇.jpg",
+    "description": "若者に向けて「自分を変えるということ」というテーマで登壇",
+    "contentFile": "projects/大阪万博登壇.md",
+    "tags": [
+      { "name": "onStage", "color": "yellow" },
+      { "name": "プレゼンテーション", "color": "green" }
     ]
   }
 ]

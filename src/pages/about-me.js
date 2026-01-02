@@ -223,6 +223,24 @@ const designSkills = [
   }
 ]
 
+const dxSkills = [
+  {
+    title: 'kintone',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+    level: 3
+  },
+  {
+    title: 'Power Automate',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+    level: 3
+  },
+  {
+    title: 'MS365',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+    level: 3
+  }
+]
+
 const otherSkills = [
   {
     title: 'GitHub',
@@ -243,16 +261,6 @@ const otherSkills = [
     title: 'Docker',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
     level: 2
-  },
-  {
-    title: 'kintone',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
-    level: 3
-  },
-  {
-    title: 'PowerAutomate',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
-    level: 3
   },
   {
     title: 'Final Cut Pro',
@@ -340,20 +348,22 @@ const SkillCard = ({ skills }) => {
   }
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
       {skills.map((card, index) => (
         <div
           key={index}
-          className="bg-white rounded-lg shadow-md text-center py-5 px-3"
+          className="bg-white rounded-lg shadow-md flex flex-col items-center justify-center py-3 px-2 w-full h-full"
         >
           <Image
             src={card.img}
             alt={card.title}
             width={56}
             height={56}
-            className="w-14 mx-auto pb-2"
+            className="w-14 h-14 object-contain mb-2"
           />
-          <p className="pb-1 font-medium">{card.title}</p>
+          <p className="font-medium text-center leading-[1.1] w-full break-words">
+            {card.title}
+          </p>
           {/* <span className="flex justify-center gap-0">
             {generateStars(card.level)}
           </span> */}
@@ -406,29 +416,57 @@ const AboutMe = () => (
     <div>
       <div>
         <h3 className="text-xl mb-4 font-bold">Development Skills</h3>
+
         {/* Frontend */}
-        <h5 className="text-lg font-bold pb-4">Frontend</h5>
+        <h5 className="text-lg font-bold pb-2">Frontend</h5>
+        <p className="text-[15px] text-gray-700 pb-4">
+          2022年12月より。HTML、CSS、JS/TS、CSSフレームワーク、React、Next.jsを使用。技育CAMPハッカソンで優秀賞、アドバンスで大賞受賞。CARTA
+          HOLDINGSインターンでUI/UX担当。
+        </p>
         <SkillCard skills={frontendSkills} />
 
         {/* Backend */}
-        <h5 className="text-lg font-bold pb-4 pt-10">Backend</h5>
+        <h5 className="text-lg font-bold pb-2 pt-4">Backend</h5>
+        <p className="text-[15px] text-gray-700 pb-4">
+          2023年8月より。Go、GraphQL、Docker、Firebase、Supabaseを使用。ハッカソンでGo（Echo、GORM）を用いたREST
+          API開発全般を担当。Spotify Web
+          APIやSupabaseを用いた研究用アプリケーション開発。
+        </p>
         <SkillCard skills={backendSkills} />
 
         {/* Cloud */}
-        <h5 className="text-lg font-bold pb-4 pt-10">Cloud</h5>
+        <h5 className="text-lg font-bold pb-2 pt-4">Cloud</h5>
+        <p className="text-[15px] text-gray-700 pb-4">
+          2025年3月より。研究室のインフラ整備としてAWSクラウド環境整備を担当。Amazon
+          BedrockやAzure OpenAI Serviceを用いた開発を学習中。
+        </p>
         <SkillCard skills={cloudSkills} />
 
         {/* Design */}
-        <h5 className="text-lg font-bold pb-4 pt-10">Design</h5>
+        <h5 className="text-lg font-bold pb-2 pt-4">Design</h5>
+        <p className="text-[15px] text-gray-700 pb-4">
+          UI/UX面に強い関心があり、Figmaを使用したデザインから実装まで一貫して対応。MUI、Tailwind、Mantineなどのライブラリを活用。
+        </p>
         <SkillCard skills={designSkills} />
 
+        {/* DX推進 */}
+        <h5 className="text-lg font-bold pb-2 pt-4">DX推進</h5>
+        <p className="text-[15px] text-gray-700 pb-4">
+          富山県庁DX推進サポーターとしてチームリーダーを務める（2023年4月〜現在）。kintone、FormBridge、Power
+          Automateを活用した業務改善。MS365普及促進のための情報発信。生成AI活用チーム責任者としてRAGを用いた庁内検索システムの企画・開発。
+        </p>
+        <SkillCard skills={dxSkills} />
+
         {/* Other */}
-        <h5 className="text-lg font-bold pb-4 pt-10">Other</h5>
+        <h5 className="text-lg font-bold pb-2 pt-4">Other</h5>
+        <p className="text-[15px] text-gray-700 pb-4">
+          バージョン管理、データベース、コンテナ技術、動画編集など幅広いツールを活用。
+        </p>
         <SkillCard skills={otherSkills} />
       </div>
 
       <div className="mt-10">
-        <h3 className="text-xl mb-4">Experience</h3>
+        <h3 className="text-xl mb-4 font-bold">Experience</h3>
         {timelineData.map((item, index) => (
           <ExTimelineItem
             key={index}
@@ -442,7 +480,7 @@ const AboutMe = () => (
       </div>
 
       <div className="mt-10">
-        <h3 className="text-xl mb-4">Awards</h3>
+        <h3 className="text-xl mb-4 font-bold">Awards</h3>
         {awardData.map((item, index) => (
           <TimelineItem
             key={index}
@@ -455,7 +493,7 @@ const AboutMe = () => (
       </div>
 
       <div className="mt-10">
-        <h3 className="text-xl mb-4">Qualifications</h3>
+        <h3 className="text-xl mb-4 font-bold">Qualifications</h3>
         <ul className="list-disc ml-8 space-y-3">
           {qualificationData.map((item, index) => (
             <li key={index} className="text-[17px]">

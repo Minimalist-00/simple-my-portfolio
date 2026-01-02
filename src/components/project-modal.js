@@ -101,36 +101,33 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
                 <div className="space-y-4">
                   {/* タグセクション */}
                   {project.tags && project.tags.length > 0 && (
-                    <div>
-                      <h3 className="text-sm font-bold mb-2">タグ</h3>
-                      <div className="flex flex-wrap gap-2">
-                        {project.tags.map((tag, index) => (
-                          <span
-                            key={index}
-                            className={`px-3 py-1 rounded-full text-sm font-medium ${
-                              tag.color === 'blue'
-                                ? 'bg-blue-100 text-blue-800'
-                                : tag.color === 'green'
-                                  ? 'bg-green-100 text-green-800'
-                                  : tag.color === 'red'
-                                    ? 'bg-red-100 text-red-800'
-                                    : tag.color === 'yellow'
-                                      ? 'bg-yellow-100 text-yellow-800'
-                                      : tag.color === 'purple'
-                                        ? 'bg-purple-100 text-purple-800'
-                                        : tag.color === 'pink'
-                                          ? 'bg-pink-100 text-pink-800'
-                                          : tag.color === 'orange'
-                                            ? 'bg-orange-100 text-orange-800'
-                                            : tag.color === 'cyan'
-                                              ? 'bg-cyan-100 text-cyan-800'
-                                              : 'bg-gray-100 text-gray-800'
-                            }`}
-                          >
-                            {tag.name}
-                          </span>
-                        ))}
-                      </div>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, index) => (
+                        <span
+                          key={index}
+                          className={`px-3 py-1 rounded-full text-sm font-medium ${
+                            tag.color === 'blue'
+                              ? 'bg-blue-100 text-blue-800'
+                              : tag.color === 'green'
+                                ? 'bg-green-100 text-green-800'
+                                : tag.color === 'red'
+                                  ? 'bg-red-100 text-red-800'
+                                  : tag.color === 'yellow'
+                                    ? 'bg-yellow-100 text-yellow-800'
+                                    : tag.color === 'purple'
+                                      ? 'bg-purple-100 text-purple-800'
+                                      : tag.color === 'pink'
+                                        ? 'bg-pink-100 text-pink-800'
+                                        : tag.color === 'orange'
+                                          ? 'bg-orange-100 text-orange-800'
+                                          : tag.color === 'cyan'
+                                            ? 'bg-cyan-100 text-cyan-800'
+                                            : 'bg-gray-100 text-gray-800'
+                          }`}
+                        >
+                          {tag.name}
+                        </span>
+                      ))}
                     </div>
                   )}
 
