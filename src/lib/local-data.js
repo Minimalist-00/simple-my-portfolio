@@ -29,7 +29,9 @@ export function getProjectsFromJson(jsonFileName) {
       if (processedItem.tags && Array.isArray(processedItem.tags)) {
         const expandedTags = processedItem.tags.map(tagKey => {
           const tagDef = tagDefinitions[tagKey]
-          return tagDef || { name: tagKey, color: 'gray' }
+          return tagDef
+            ? { ...tagDef, id: tagKey }
+            : { id: tagKey, name: tagKey, color: 'gray' }
         })
         processedItem.tags = expandedTags
       }

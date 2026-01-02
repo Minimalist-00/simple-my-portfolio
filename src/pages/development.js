@@ -1,8 +1,10 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect, useState } from 'react'
 import CardList from '../components/card-list'
 import Layout from '../components/layouts/article'
 
 const Development = () => {
+  // ... existing component code ...
   const [projects, setProjects] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -68,3 +70,11 @@ const Development = () => {
 }
 
 export default Development
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common']))
+    }
+  }
+}

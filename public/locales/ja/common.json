@@ -6,5 +6,28 @@
   "selfIntro": {
     "title": "自己紹介",
     "content": "富山県立大学で情報工学を専攻する修士1年生<br />中学から高校時代、スプラトゥーンというゲームを5000時間プレイ。授業中は爆睡、家に帰ってからは朝までゲームをしていた元ダメ人間（自称）<br />そんな自分に嫌気がさし、「自分を変えよう」と決心。<br />2025年に大学院進学し、2026年に夢の実現のため1年の海外留学を予定"
+  },
+  "tags": {
+    "government": "行政",
+    "dx": "DX推進",
+    "onStage": "登壇",
+    "presentation": "プレゼン",
+    "lab": "研究室",
+    "research": "研究",
+    "psychology": "社会心理学",
+    "leadership": "リーダー",
+    "education": "教育",
+    "ta": "TA",
+    "overseas": "海外",
+    "entrepreneurship": "起業",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "design": "Design",
+    "uiux": "UI/UX",
+    "chrome": "Chrome拡張",
+    "iot": "IoT",
+    "team": "チーム開発",
+    "hackathon": "ハッカソン",
+    "personal": "個人開発"
   }
 }

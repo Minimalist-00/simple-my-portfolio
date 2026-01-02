@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 import { useEffect } from 'react'
 import MarkdownRenderer from './markdown-renderer'
 
@@ -12,6 +13,7 @@ import MarkdownRenderer from './markdown-renderer'
  * @param {boolean} isLoading - コンテンツ読み込み中かどうか
  */
 const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
+  const { t } = useTranslation('common')
   // ESCキーでモーダルを閉じる & 背景スクロール無効化（スクロールバーは維持）
   useEffect(() => {
     const handleEsc = e => {
@@ -130,7 +132,7 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
                                                 : 'bg-gray-100 text-gray-800'
                               }`}
                             >
-                              {tag.name}
+                              {t(`tags.${tag.id}`)}
                             </span>
                           ))}
                         </div>
