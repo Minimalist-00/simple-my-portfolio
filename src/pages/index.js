@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import NextLink from 'next/link'
 import {
   IoLogoGithub,
   IoLogoInstagram,
@@ -82,28 +81,6 @@ const Home = () => {
             <br />
             2025年に大学院進学し、2026年に夢の実現のため1年の海外留学を予定
           </p>
-          <div className="text-center my-4">
-            <NextLink
-              href="/Projects"
-              scroll={false}
-              className="inline-flex items-center px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded transition-colors"
-            >
-              作品を見る
-              <svg
-                className="ml-1 w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </NextLink>
-          </div>
         </Section>
 
         <Section delay={0.2}>
@@ -122,8 +99,8 @@ const Home = () => {
           <h3 className="section-title">開発経験とモチベーション</h3>
           <div className="text-justify hyphens-auto">
             <div>
-              <p>技術スタック</p>
-              <ul className="list-disc list-inside">
+              <p>2022年12月よりプログラミングを開始</p>
+              <ul className="list-disc list-inside pt-2">
                 <li>Next.js（TypeScript）を用いたWebアプリケーション開発</li>
                 <li>
                   Figmaを使用した簡単なUIデザイン、TailwindCSSやMaterial
