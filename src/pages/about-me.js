@@ -10,8 +10,7 @@ const timelineData = [
   {
     date: '2021.04',
     title: '富山県立大学 工学部 情報システム工学科 入学',
-    description:
-      '2022年12月に授業をきっかけでプログラミングを開始。主にReact（Typescript）やNext、Goを使用してWebアプリを開発。UI/UX面にとても関心があり、Figmaを使用したデザインやMUI･Tailwind･MantainなどのUIライブラリ等を使用して実装までを行う。2023年4月に登壇したLT大会と、6月に参加したハッカソンをきっかけに、他のエンジニアとの技術的な交流も積極的に行っている。',
+    description: '2022年12月に授業をきっかけにWeb開発をはじめる',
     logo: '/images/logo_tpu.png'
   },
   {
@@ -23,14 +22,14 @@ const timelineData = [
   {
     date: '2022.10 - ',
     title: '学生団体「POLYGON」 加入',
-    description: '富山県立大学で情報分野に興味･関心がある学生が集う学生団体',
+    description: '情報分野に興味のある学生が集う学生団体に加入',
     logo: '/images/logo_polygon.png'
   },
   {
     date: '2023.04 - 2026.03',
     title: '富山県庁 DX推進サポーター 任命',
     description:
-      '雇用形態：会計年度任用職員。富山県庁内で抱えている課題の改善（業務改善）を行っている。実際に県庁の方々とのヒアリング･ミーティングを行いながら、問題を根本から解決するために学生視点からの提案･解決を行っている。'
+      '会計年度任用職員として雇用され、学生視点からの助言・技術的な支援や、業務改善を通じて県庁のDX推進を行う。2024年10月から1年間リーダーを務めた。kintone、FormBridge、Power Automateを活用した業務改善や、MS365普及促進のための情報発信、生成AIの普及やRAGを用いた財政課の予算要求参照RAGシステムの企画・開発などを行ってきた。'
   },
   {
     date: '2023.08',
@@ -57,7 +56,7 @@ const timelineData = [
     date: '2024.02 - 2024.03',
     title: '大学事務局 アルバイト',
     description:
-      'POLYGONの取り組みとして、アルバイトの勤怠管理DXを行った。具体的には、総務課へのヒアリング、業務フローの見直し、MS製品（PowerAutomateなど）を使用したシステムの実装などを担当'
+      '学生団体POLYGONの取り組みとして、アルバイトの勤怠管理DXを行った。具体的には、総務課へのヒアリング、業務フローの見直し、MS製品（PowerAutomateなど）を使用したシステムの実装などを担当'
   },
   {
     date: '2025.03',
@@ -161,10 +160,18 @@ const backendSkills = [
     level: 3
   },
   {
-    title: 'TypeScript',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-    level: 3
+    title: 'Postgre SQL',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+    level: 2
   },
+  {
+    title: 'Supabase',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg',
+    level: 3
+  }
+]
+
+const generalSkills = [
   {
     title: 'C',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
@@ -226,17 +233,18 @@ const designSkills = [
 const dxSkills = [
   {
     title: 'kintone',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
-    level: 3
+    img: '/images/kintone.jpg',
+    level: 3,
+    imgClass: 'w-20 h-20 object-contain'
   },
   {
     title: 'Power Automate',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+    img: '/images/PowerAutomate.svg',
     level: 3
   },
   {
     title: 'MS365',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+    img: '/images/MS365.jpg',
     level: 3
   }
 ]
@@ -248,29 +256,34 @@ const otherSkills = [
     level: 4
   },
   {
-    title: 'PostgreSQL',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
-    level: 2
-  },
-  {
-    title: 'Supabase',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg',
+    title: 'Notion',
+    img: '/images/notion.png',
     level: 3
   },
   {
     title: 'Docker',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+    img: '/images/docker.png',
     level: 2
   },
   {
     title: 'Final Cut Pro',
-    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg',
+    img: '/images/FinalCutPro.png',
     level: 3
   },
   {
     title: 'Premiere Pro',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-original.svg',
     level: 3
+  },
+  {
+    title: 'Adobe Lightroom',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg',
+    level: 3
+  },
+  {
+    title: 'Unity',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg',
+    level: 2
   }
 ]
 
@@ -352,15 +365,17 @@ const SkillCard = ({ skills }) => {
       {skills.map((card, index) => (
         <div
           key={index}
-          className="bg-white rounded-lg shadow-md flex flex-col items-center justify-center py-4 px-2 w-full h-full"
+          className="bg-white rounded-lg shadow-md flex flex-col items-center justify-center py-2 px-2 w-full h-full"
         >
-          <Image
-            src={card.img}
-            alt={card.title}
-            width={56}
-            height={56}
-            className="w-14 h-14 object-contain mb-2"
-          />
+          <div className="h-20 flex items-center justify-center mb-1">
+            <Image
+              src={card.img}
+              alt={card.title}
+              width={56}
+              height={56}
+              className={card.imgClass || 'w-14 h-14 object-contain'}
+            />
+          </div>
           <p className="font-medium text-center leading-[1.1] w-full break-words">
             {card.title}
           </p>
@@ -415,7 +430,11 @@ const AboutMe = () => (
   <Layout title="About Me">
     <div>
       <div>
-        <h3 className="text-xl mb-4 font-bold">Development Skills</h3>
+        <h3 className="text-xl mb-2 font-bold">Development Skills</h3>
+        <p className="text-[15px] text-gray-700 pb-4">
+          2022年12月より。HTML、CSS、JS/TS、CSSフレームワーク、React、Next.jsを使用。技育CAMPハッカソンで優秀賞、アドバンスで大賞受賞。CARTA
+          HOLDINGSインターンでUI/UX担当。
+        </p>
 
         {/* Frontend */}
         <h5 className="text-lg font-bold pb-2">Frontend</h5>
@@ -433,6 +452,13 @@ const AboutMe = () => (
           APIやSupabaseを用いた研究用アプリケーション開発。
         </p>
         <SkillCard skills={backendSkills} />
+
+        {/* General */}
+        <h5 className="text-lg font-bold pb-2 pt-4">General</h5>
+        <p className="text-[15px] text-gray-700 pb-4">
+          大学の授業や基礎学習で使用した言語。
+        </p>
+        <SkillCard skills={generalSkills} />
 
         {/* Cloud */}
         <h5 className="text-lg font-bold pb-2 pt-4">Cloud</h5>

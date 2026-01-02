@@ -60,7 +60,7 @@ const Development = () => {
   return (
     <Layout title="Development">
       <div>
-        <h3 className="text-xl mb-4 font-bold">開発活動</h3>
+        <h3 className="text-xl mb-4 font-bold">制作物</h3>
         <CardList items={projects} delay={0.3} apiEndpoint="/api/development" />
       </div>
     </Layout>
