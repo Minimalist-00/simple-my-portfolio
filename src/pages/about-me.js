@@ -352,7 +352,7 @@ const SkillCard = ({ skills }) => {
       {skills.map((card, index) => (
         <div
           key={index}
-          className="bg-white rounded-lg shadow-md flex flex-col items-center justify-center py-3 px-2 w-full h-full"
+          className="bg-white rounded-lg shadow-md flex flex-col items-center justify-center py-4 px-2 w-full h-full"
         >
           <Image
             src={card.img}
