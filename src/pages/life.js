@@ -1,3 +1,4 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from '../components/layouts/article'
 import MarkdownRenderer from '../components/markdown-renderer'
 import { getMarkdownContent } from '../lib/local-data'
@@ -16,11 +17,12 @@ const Life = ({ content }) => (
   </Layout>
 )
 
-export async function getStaticProps() {
-  const content = getMarkdownContent('life.md')
+export async function getStaticProps({ locale }) {
+  const content = getMarkdownContent(`${locale}/life.md`)
   return {
     props: {
-      content
+      content,
+      ...(await serverSideTranslations(locale, ['common']))
     }
   }
 }
