@@ -129,6 +129,11 @@ const awardData = [
     date: '2025.07.19',
     title: '大阪・関西万博 フューチャライフビレッジ 登壇',
     description: '若者に向けて「自分を変えるということ」というテーマで登壇'
+  },
+  {
+    date: '2025.10.09',
+    title: 'J-LIS 地方自治情報化推進フェア Microsoftブースで登壇',
+    description: '県庁DX推進サポーターの取り組みを発表'
   }
 ]
 
