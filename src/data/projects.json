@@ -1,10 +1,10 @@
 [
   {
     "id": "project-1",
-    "title": "プロジェクト1",
+    "title": "富山県庁 DX推進サポーター",
     "thumbnail": "/images/no-image.png",
-    "description": "プロジェクト1の説明文です。",
-    "contentFile": "projects/project-1.md",
+    "description": "富山県庁のデジタル推進室内で「DX推進サポーター」として雇用（非常勤職員）",
+    "contentFile": "projects/DXSupporter.md",
     "tags": [
       { "name": "研究", "color": "blue" },
       { "name": "AI", "color": "green" }
@@ -12,12 +12,13 @@
   },
   {
     "id": "project-2",
-    "title": "プロジェクト2",
+    "title": "卒業研究",
     "thumbnail": "/images/no-image.png",
-    "description": "プロジェクト2の説明文です。",
-    "contentFile": "projects/project-2.md",
+    "description": "卒業研究: 音楽嗜好の共有を通じた段階的な自己開示が受容性に与える効果の検証",
+    "contentFile": "projects/Research.md",
     "tags": [
-      { "name": "実験", "color": "purple" }
+      { "name": "研究", "color": "blue" },
+      { "name": "AI", "color": "green" }
     ]
   }
 ]

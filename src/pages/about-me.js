@@ -113,6 +113,18 @@ const awardData = [
   }
 ]
 
+const qualificationData = [
+  {
+    title: '基本情報技術者試験'
+  },
+  {
+    title: '普通自動車第一種運転免許'
+  },
+  {
+    title: '乙種第4類危険物取扱者'
+  }
+]
+
 // スキルデータ
 const frontendSkills = [
   {
@@ -342,9 +354,9 @@ const SkillCard = ({ skills }) => {
             className="w-14 mx-auto pb-2"
           />
           <p className="pb-1 font-medium">{card.title}</p>
-          <span className="flex justify-center gap-0">
+          {/* <span className="flex justify-center gap-0">
             {generateStars(card.level)}
-          </span>
+          </span> */}
         </div>
       ))}
     </div>
@@ -440,6 +452,17 @@ const AboutMe = () => (
             isLast={index === awardData.length - 1}
           />
         ))}
+      </div>
+
+      <div className="mt-10">
+        <h3 className="text-xl mb-4">Qualifications</h3>
+        <ul className="list-disc ml-8 space-y-3">
+          {qualificationData.map((item, index) => (
+            <li key={index} className="text-[17px]">
+              {item.title}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   </Layout>
