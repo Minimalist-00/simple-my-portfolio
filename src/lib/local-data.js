@@ -9,15 +9,31 @@ import path from 'path'
 export function getProjectsFromJson(jsonFileName) {
   const filePath = path.join(process.cwd(), 'src', 'data', jsonFileName)
   const fileContents = fs.readFileSync(filePath, 'utf8')
-  const data = JSON.parse(fileContents)
+  const parsedData = JSON.parse(fileContents)
+
+  // { tagDefinitions, projects } 形式のJSONファイルから projects を取得
+  const data = parsedData.projects || []
+  const tagDefinitions = parsedData.tagDefinitions || {}
 
   return data.map(item => {
+    let processedItem = { ...item }
+
     // IDがない場合はcontentFileから生成する
-    if (!item.id && item.contentFile) {
-      const id = path.basename(item.contentFile, '.md')
-      return { ...item, id }
+    if (!processedItem.id && processedItem.contentFile) {
+      const id = path.basename(processedItem.contentFile, '.md')
+      processedItem.id = id
     }
-    return item
+
+    // タグキーをタグオブジェクトに展開する
+    if (processedItem.tags && Array.isArray(processedItem.tags)) {
+      const expandedTags = processedItem.tags.map(tagKey => {
+        const tagDef = tagDefinitions[tagKey]
+        return tagDef || { name: tagKey, color: 'gray' }
+      })
+      processedItem.tags = expandedTags
+    }
+
+    return processedItem
   })
 }
 
