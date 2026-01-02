@@ -18,7 +18,7 @@
       "title": "富山県庁 DX推進サポーター",
       "thumbnail": "/images/Projects/DXサポーター成果発表_2024_1.jpeg",
       "description": "富山県庁のデジタル推進室内で「DX推進サポーター」として雇用（非常勤職員）",
-      "contentFile": "projects/DXSupporter.md",
+      "contentFile": "projects/DX推進サポーター.md",
       "tags": ["government", "dx"]
     },
     {
@@ -31,14 +31,14 @@
     {
       "title": "修士研究",
       "thumbnail": "/images/no-image.png",
-      "description": "修士研究: スマートフォンにおける後悔使用予測",
+      "description": "スマートフォンにおける後悔使用予測",
       "contentFile": "projects/修士研究.md",
       "tags": ["lab", "research", "psychology"]
     },
     {
       "title": "卒業研究",
       "thumbnail": "/images/Projects/UBISymposium2025.jpeg",
-      "description": "卒業研究: 音楽嗜好の共有を通じた段階的な自己開示が受容性に与える効果の検証",
+      "description": "音楽嗜好の共有を通じた段階的な自己開示が受容性に与える効果の検証",
       "contentFile": "projects/卒業研究.md",
       "tags": ["lab", "research", "psychology"]
     },
@@ -53,14 +53,14 @@
       "title": "Web講義 TA",
       "thumbnail": "/images/no-image.png",
       "description": "",
-      "contentFile": "projects/.md",
+      "contentFile": "projects/WebLectureTA.md",
       "tags": ["education", "ta"]
     },
     {
       "title": "ポートランド起業家研修",
       "thumbnail": "/images/no-image.png",
       "description": "",
-      "contentFile": "projects/.md",
+      "contentFile": "projects/ポートランド起業家研修.md",
       "tags": ["overseas", "entrepreneurship"]
     }
   ]

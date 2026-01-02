@@ -15,26 +15,28 @@ export function getProjectsFromJson(jsonFileName) {
   const data = parsedData.projects || []
   const tagDefinitions = parsedData.tagDefinitions || {}
 
-  return data.map(item => {
-    let processedItem = { ...item }
+  return data
+    .map(item => {
+      let processedItem = { ...item }
 
-    // IDがない場合はcontentFileから生成する
-    if (!processedItem.id && processedItem.contentFile) {
-      const id = path.basename(processedItem.contentFile, '.md')
-      processedItem.id = id
-    }
+      // IDがない場合はcontentFileから生成する
+      if (!processedItem.id && processedItem.contentFile) {
+        const id = path.basename(processedItem.contentFile, '.md')
+        processedItem.id = id
+      }
 
-    // タグキーをタグオブジェクトに展開する
-    if (processedItem.tags && Array.isArray(processedItem.tags)) {
-      const expandedTags = processedItem.tags.map(tagKey => {
-        const tagDef = tagDefinitions[tagKey]
-        return tagDef || { name: tagKey, color: 'gray' }
-      })
-      processedItem.tags = expandedTags
-    }
+      // タグキーをタグオブジェクトに展開する
+      if (processedItem.tags && Array.isArray(processedItem.tags)) {
+        const expandedTags = processedItem.tags.map(tagKey => {
+          const tagDef = tagDefinitions[tagKey]
+          return tagDef || { name: tagKey, color: 'gray' }
+        })
+        processedItem.tags = expandedTags
+      }
 
-    return processedItem
-  })
+      return processedItem
+    })
+    .filter(item => !item.hidden)
 }
 
 /**
