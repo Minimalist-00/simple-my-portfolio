@@ -95,27 +95,28 @@ const Home = () => {
         </Section>
 
         <Section delay={0.3}>
-          <h3 className="section-title">開発経験とモチベーション</h3>
+          <h3 className="section-title">Development</h3>
           <div className="text-justify hyphens-auto">
             <div>
               <p>2022年12月よりプログラミングを開始</p>
-              <ul className="list-disc list-inside pt-2">
-                <li>Next.js（TypeScript）を用いたWebアプリケーション開発</li>
-                <li>
-                  Figmaを使用した簡単なUIデザイン、TailwindCSSやMaterial
-                  UIを用いたスタイリング
-                </li>
-                <li>
-                  TypeScriptやPython、Goを用いた簡単なAPI作成、オープンAPIを使用したバックエンド制作
-                </li>
-                <li>
-                  Azure、AWSなどのクラウドサービスを用いたクラウドベースの開発
-                </li>
-                <li>Gitを使用したバージョン管理、プロジェクト共有</li>
-              </ul>
+              <div className="pt-2">
+                <p>
+                  フロントエンド:
+                  Next.js/TypeScriptを用いたWebアプリケーション開発
+                </p>
+                <p>
+                  デザイン:
+                  Figmaを使用した簡単なUIデザイン、TailwindCSSやMUIを用いたスタイリング
+                </p>
+                <p>
+                  バックエンド:
+                  PythonやGoを用いた簡単なRestAPIの作成、オープンのAPIを使用したバックエンド
+                </p>
+                <p>クラウドサービス: Azure、AWSを用いてフルスタックな制作</p>
+              </div>
             </div>
             <div className="pt-2">
-              これまで、授業の開発を始めとして3回ハッカソンへの出場（内2回受賞）、インターンシップや個人で開発を行ってきた。海外の動画を別の言語にリアルタイムで吹き替えする拡張機能や、学生団体のプロジェクトをゲームの掲示板風に管理するサービスを作ってきた。業務面では、フルスタックなToDoアプリ教材の制作や、行政で過去の予算要求を参照するRAGシステムをAzureで開発してきた
+              これまでに、海外の動画を別の言語にリアルタイムで吹き替えするChrome拡張機能や、学生団体のプロジェクトをゲームの掲示板風に管理するサービスを作ってきた。業務面では、フルスタックなToDoアプリ教材の制作や、行政で過去の予算要求を参照するRAGシステムをAzureで開発してきた
             </div>
             <div className="pt-2">
               現在は単なるWebアプリ開発に留まらず、アーティストやクリエイターの自己表現の憧れから、「やりたい」を諦めてきたゲーム制作と、Vlog制作（動画撮影、編集）に挑戦している。
@@ -123,8 +124,32 @@ const Home = () => {
           </div>
         </Section>
 
+        <Section delay={0.4}>
+          <h3 className="section-title">Hobby</h3>
+          <div className="text-justify hyphens-auto">
+            <ul className="list-disc list-inside space-y-2">
+              <li>
+                <strong>ゲーム:</strong>{' '}
+                スプラトゥーンとファンタジーライフというゲームが大好きです
+              </li>
+              <li>
+                <strong>写真撮影:</strong>{' '}
+                SONYのα7C2でそのときその瞬間を美しく収めています。ポートレート撮影がすき
+              </li>
+              <li>
+                <strong>歌うこと:</strong>{' '}
+                学校祭で2回、結婚式で1回歌いました！歌を通じて自己を表現するのがすき
+              </li>
+              <li>
+                <strong>スノボ:</strong>{' '}
+                雪山を駆け抜けるのが気持ちいいんです。パウダーやグラトリがすき
+              </li>
+            </ul>
+          </div>
+        </Section>
+
         {/* SNSリンク */}
-        <Section delay={0.3}>
+        <Section delay={0.5}>
           <h3 className="section-title">SNS</h3>
           <ul>
             <li>

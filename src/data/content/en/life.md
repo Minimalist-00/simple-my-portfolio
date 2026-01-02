@@ -8,7 +8,7 @@ By June of my fourth year of university, nothing had changed. I'd accepted a job
 
 To change myself, I needed to understand why I couldn't push through. After thinking it over, I realized there was a huge gap between my "ideal" and "reality." My ideal was a life where I constantly brought my passions to life. But my reality was one where I could do neither what I should do nor what I wanted to do—just wasting away, hating myself day after day.
 
-![alt text](/images/Life/おんすて春合宿.jpeg)
+![alt text](/images/Life/悩みの表情.jpg)
 
 So I tried everything, no matter how unglamorous. I visualized my days on a calendar to see where time was being wasted. I journaled my feelings and realizations daily, trying to talk myself out of running away. After about six months, nothing had changed. But even when it was painful to see no results, I kept at it—trial and error, applying the PDCA cycle, testing new strategies. I read books on self-management despite hating reading, and there were nights I spent five hours in tears reflecting on myself.
 
