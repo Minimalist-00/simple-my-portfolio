@@ -1,5 +1,5 @@
-## 概要
+## Overview
 
-## 活動内容
+## Activities
 
-## 私の活動領域
+## My Areas of Activity

@@ -1,46 +1,46 @@
-## 概要
+## Overview
 
-インターンシップで、聖地巡礼をしたい外国人と日本にいる共通のアニメ好きを繋ぐマッチングサービスの開発をした。異なる背景のメンバーとのコミュニケーションに苦労しながらも、小さな PR でのコードレビューや MVP 開発でユーザー価値を追求。フロントエンド賞を受賞
+During an internship, I developed a matching service that connects foreigners who want to go on anime pilgrimage tours with anime fans in Japan who share common interests. While struggling with communication among members from different backgrounds, I pursued user value through code reviews on small PRs and MVP development. Won the Frontend Award.
 
-期間: 2023 年 8 月・3 週間
+Period: August 2023, 3 weeks
 
-役割: フロントエンド・デザイン担当
+Role: Frontend and Design
 
-## アプリ画面
+## App Screens
 
-トップページ
+Top Page
 
-![トップページ](</images/development/seichi-cross-over/2023-08-28_(6).png>)
+![Top Page](</images/development/seichi-cross-over/2023-08-28_(6).png>)
 
-アニメ選択ページ
+Anime Selection Page
 
-![アニメ選択ページ](</images/development/seichi-cross-over/2023-08-28_(7).png>)
+![Anime Selection Page](</images/development/seichi-cross-over/2023-08-28_(7).png>)
 
-エリア（県）選択ページ
+Area (Prefecture) Selection Page
 
-![エリア選択1](</images/development/seichi-cross-over/2023-08-28_(10).png>)
+![Area Selection 1](</images/development/seichi-cross-over/2023-08-28_(10).png>)
 
-![エリア選択2](</images/development/seichi-cross-over/2023-08-28_(11).png>)
+![Area Selection 2](</images/development/seichi-cross-over/2023-08-28_(11).png>)
 
-![エリア選択3](</images/development/seichi-cross-over/2023-08-28_(12).png>)
+![Area Selection 3](</images/development/seichi-cross-over/2023-08-28_(12).png>)
 
-ガイド選択ページ
+Guide Selection Page
 
-![ガイド選択1](</images/development/seichi-cross-over/2023-08-28_(13).png>)
+![Guide Selection 1](</images/development/seichi-cross-over/2023-08-28_(13).png>)
 
-![ガイド選択2](</images/development/seichi-cross-over/2023-08-28_(14).png>)
+![Guide Selection 2](</images/development/seichi-cross-over/2023-08-28_(14).png>)
 
-![ガイド選択3](</images/development/seichi-cross-over/2023-08-28_(15).png>)
+![Guide Selection 3](</images/development/seichi-cross-over/2023-08-28_(15).png>)
 
-![ガイド選択4](</images/development/seichi-cross-over/2023-08-28_(16).png>)
+![Guide Selection 4](</images/development/seichi-cross-over/2023-08-28_(16).png>)
 
-## 意識したこと・取り組んだこと
+## What I Focused On / Efforts
 
-- 外国人がメインターゲットなため、PintarestやDribbbleなどで海外のモダンなUIサイトを参考にしてFigmaでデザインを行った
-- 時流などから、どのようなユーザーにどのようなニーズがあるかというところから計画を行った
-- 効率的なデータ取得のためにGraphQLを採用した
-- 短い開発期間だったため、MVP（Minimum Viable Product）を追求して開発を行った
+- Since the main target was foreigners, I designed in Figma by referring to modern UI sites from overseas such as Pinterest and Dribbble
+- Planned from the perspective of what needs which users have based on current trends
+- Adopted GraphQL for efficient data retrieval
+- Due to the short development period, pursued MVP (Minimum Viable Product) development
 
-## プレゼン資料
+## Presentation Materials
 
-[Treasure\_ショータニ](https://www.canva.com/design/DAFsblLLyZQ/6dnKoV7k_r5X0u4G1A7vLA/view?utm_content=DAFsblLLyZQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+[Treasure_Shotani](https://www.canva.com/design/DAFsblLLyZQ/6dnKoV7k_r5X0u4G1A7vLA/view?utm_content=DAFsblLLyZQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)

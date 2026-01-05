@@ -1,11 +1,11 @@
-## 概要
+## Overview
 
-県庁で毎年行われる予算要求の際に、財政課職員が過去の予算要求内容や他県の事例、募集中の補助金を参照できるシステムを開発。
+Developed a system that allows Finance Division staff to reference past budget request content, examples from other prefectures, and available subsidies during the annual budget request process at the prefectural government.
 
-- Azure OpenAIやAI Searchを組み合わせて、RAGとしての機能
-- Bot Serviceを用いて、Teams上のUIで質問を行うことが可能
-- Boxをデータソースとして、ExcelやPDFなどの形式のファイルを検索可能
+- RAG functionality combining Azure OpenAI and AI Search
+- Ability to ask questions through Teams UI using Bot Service
+- Searchable files in formats such as Excel and PDF with Box as the data source
 
-## アーキテクチャ
+## Architecture
 
-![RAGシステムのアーキテクチャ図](/images/development/rag-system/architecture.png)
+![RAG System Architecture Diagram](/images/development/rag-system/architecture.png)

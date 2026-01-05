@@ -1,41 +1,41 @@
-## 概要
+## Overview
 
-3 人チーム開発で公共サービスを題材とした Web アプリケーション制作。Notion を使ったタスク管理・ドキュメント整理に加えて、自主的に Git/GitHub を導入してコード管理を行うように工夫した
+Web application development on the theme of public services in a 3-person team. In addition to task management and document organization using Notion, I took the initiative to introduce Git/GitHub for code management.
 
-期間: 2023 年 1-2 月
+Period: January-February 2023
 
-役割: フロントエンド・デザイン
+Role: Frontend and Design
 
 GitHub: https://github.com/Minimalist-00/Oya-class
 
-## 説明
+## Description
 
-私達が小学生の頃、周りでランドセルの中や引き出しの中にお便りが詰め込まれているなんて人がいたと思います。「そんな事態を改善しよう」という思いから、このアプリは作られました。
+When we were in elementary school, I think there were people around us who had school notices stuffed in their backpacks or drawers. This app was created with the idea of "improving such a situation."
 
-そもそも、お便りは`ペーパーレス`ではないという問題もあります。
+In the first place, there is also the problem that school notices are not `paperless`.
 
-このアプリは、**学校側から保護者へ連絡（お知らせ）をするツール**です。
-先生は「クラス内でのお知らせ」というところへ投稿することが出来ます。
+This app is a **tool for schools to communicate (notify) with parents**.
+Teachers can post to "Class Announcements."
 
-## 担当箇所
+## My Responsibilities
 
-- プロジェクトの考案、管理
-- デザイン全般
-- フロント周り
-- プレゼン進行、スライド作成
+- Project conception and management
+- Overall design
+- Frontend work
+- Presentation facilitation and slide creation
 
-を使用し、チーム全体でプロジェクト管理・情報共有などを行った。
+Used for project management and information sharing across the team.
 
-## 工夫した点
+## Innovations
 
-1. Bootstrap + Material-UI を主に使用
-   - コードを書く量が減る → 効率化
-   - グリッドシステムで配置が容易
-   - 間隔や余白の微調整が容易
-   - 一段回おしゃれなデザイン
-2. モバイルファーストのデザイン（快適性の重視を意識）
-3. デザインイメージ
-   - ミニマムかつシンプル
-   - お母さん世代でも分かりやすい配置 + デザイン
-4. 配色
-   - 「Color Hunt」「coolors」などのサイトを参考
+1. Mainly used Bootstrap + Material-UI
+   - Reduces the amount of code to write → Efficiency
+   - Easy placement with grid system
+   - Easy fine-tuning of spacing and margins
+   - A step more stylish design
+2. Mobile-first design (emphasis on comfort)
+3. Design image
+   - Minimal and simple
+   - Layout + design that is easy to understand even for mothers' generation
+4. Color scheme
+   - Referenced sites such as "Color Hunt" and "coolors"

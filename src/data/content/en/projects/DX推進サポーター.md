@@ -1,52 +1,52 @@
-## 概要
+## Overview
 
-- 富山県庁のデジタル推進室内で「DX推進サポーター」として雇用(非常勤職員)
-- 学生団体POLYGONより、B3~M2の7名のメンバー
-- 中川(私)がリーダーを務める(2024年10月より)
-- 県庁のDX推進として、学生視点からの助言・技術的な支援や、業務改善に取り組む
+- Employed as a "DX Promotion Supporter" (part-time staff) in the Digital Promotion Office of Toyama Prefectural Government
+- 7 members from student organization POLYGON, ranging from B3 to M2
+- I (Nakagawa) serve as the leader (since October 2024)
+- Working on DX promotion at the prefectural government through advice from a student perspective, technical support, and business improvement
 
-期間: 2023年4月 - 2026年3月
+Period: April 2023 - March 2026
 
-![DXサポーター成果発表](/images/Projects/DXサポーター成果発表_2024_1.jpeg)
+![DX Supporter Presentation](/images/Projects/DXサポーター成果発表_2024_1.jpeg)
 
-## 2023年度:個別課題解決型アプローチ
+## FY2023: Individual Problem-Solving Approach
 
-- 各課へ直接介入し、ヒアリングから改善業務フローの提案、システム実装・導入までを一貫して担当した
-- サイボウズ社「kintone」「FormBridge」やMicrosoft社「Power Automate」等のツールを活用した業務改善を推進
-- **事例:** 広報課での業務改善では、県庁職員とのヒアリングやMTGを通じ、膨大な広報事項・媒体の振り分け作業の自動化、及びシステムの導入
+- Directly intervened in each department, handling everything from interviews to proposing improved business flows and implementing/introducing systems
+- Promoted business improvement using tools such as Cybozu's "kintone" and "FormBridge" and Microsoft's "Power Automate"
+- **Case Study:** In the Public Relations Division, through interviews and meetings with prefectural government employees, automated the sorting of vast amounts of public relations items and media, and introduced the system
 
-**反省と学び**
+**Reflections and Learnings**
 
-- 1業務の改善は、氷山の一角に過ぎず、「全庁的なDX」と「職員の主体的な意欲向上」には繋がらない状況だった
-- システムも保守・運用できる人材が異動になり、3年ほどで廃れてしまう
+- Improving one task was just the tip of the iceberg and did not lead to "organization-wide DX" or "proactive motivation of employees"
+- Systems also deteriorate in about 3 years when personnel who can maintain and operate them are transferred
 
-## 2024年度:全庁的なDX推進、DX意欲のある職員のサポート
+## FY2024: Organization-wide DX Promotion, Supporting Motivated Employees
 
-- MS365の普及促進のため、DX関連情報を県庁内に特化した技術ブログやTeamsチャネルで「ひとくちメモ」として分かりやすく発信
-- 業務に課題を抱える職員に対し、ヒアリングから本質的な課題の抽出 → 改善案・方法の提案という形で「支援」(職員の主体性を尊重)
-- ソフトバンクと協力し、DX推進リーダー育成ワークショップでメンターを務めた
+- To promote the spread of MS365, disseminated DX-related information in an easy-to-understand manner as "Quick Tips" on technical blogs and Teams channels specialized for the prefectural government
+- For employees with business challenges, provided "support" in the form of extracting essential issues from interviews → proposing improvement plans and methods (respecting employee autonomy)
+- Worked with SoftBank to serve as a mentor in a DX promotion leader training workshop
 
-**反省と学び**
+**Reflections and Learnings**
 
-- DX関連情報が複数プラットフォームに散在しており、「見ない/知らない/使われない」状況
-- 生成AIが2024年度から導入されているも、ほとんど活用されていない
-- ドキュメント検索・管理に課題を感じている職員が非常に多い(どの課・業務でも比較的共通の課題)
+- DX-related information was scattered across multiple platforms, resulting in a situation where it was "not seen/not known/not used"
+- Generative AI was introduced in FY2024 but is hardly being utilized
+- Many employees feel challenged by document search and management (a relatively common issue across all departments and tasks)
 
-## 2025年度:情報統合と生成AI活用
+## FY2025: Information Integration and Generative AI Utilization
 
-**主な取り組み**
+**Main Initiatives**
 
-- 分散している情報の統合 → 生成AIによる庁内検索システムの実装
-- 県庁職員とのコネクションをさらに拡大し、DX推進の土壌を強化
+- Integration of scattered information → Implementation of an in-house search system using generative AI
+- Further expanding connections with prefectural government employees to strengthen the foundation for DX promotion
 
-**参議院選挙の投票結果集計の自動化**
+**Automation of Vote Count Aggregation for House of Councillors Election**
 
-- **概要:** 各市町村から選挙管理委員会への投票結果の報告を、メールや電話 → Forms・PowerAutomateに移行
-- **Before:** メールや電話 → 県選挙管理委員会がExcelに入力 → 様式に合わせて整形 → 報道機関に共有
-- **After:** Formsで提出 → Power Automateで Excelを自動加工 → Boxに自動投稿された結果を報道機関が閲覧
+- **Overview:** Shifted the reporting of voting results from each municipality to the Election Management Committee from email/phone → Forms/Power Automate
+- **Before:** Email/phone → Prefectural Election Management Committee inputs into Excel → Formats according to template → Shares with media
+- **After:** Submit via Forms → Power Automate automatically processes Excel → Media views results automatically posted to Box
 
-## 私の活動領域
+## My Areas of Activity
 
-- リーダーとして「組織で成果を出すこと」「メンバーの育成」に注力
-- メンバーや各チームの状況把握といったマネジメント全般
-- 生成AI活用チームの責任者
+- As a leader, focusing on "achieving results as an organization" and "developing members"
+- Overall management including understanding the situation of members and each team
+- Head of the generative AI utilization team

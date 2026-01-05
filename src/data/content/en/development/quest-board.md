@@ -1,33 +1,33 @@
-## 概要
+## Overview
 
-大学の学生団体POLYGONで作成した学生同士がプロジェクト（クエスト）を共有・募集できる掲示板システムのバックエンドAPIである。初めてGoLangに挑戦し、JWT認証によるセキュアなユーザー管理と、クエストの作成・参加・管理機能を実装した。
+A backend API for a bulletin board system created for the university student organization POLYGON where students can share and recruit projects (quests). I challenged GoLang for the first time and implemented secure user management with JWT authentication and quest creation, participation, and management functions.
 
-期間: 2023 年 8-9 月
+Period: August-September 2023
 
-形式: チーム（5 人）
+Format: Team (5 people)
 
-役割: バックエンド全部（RestAPI 開発）、リーダー
+Role: All backend (REST API development), Leader
 
-## アプリ画面
+## App Screens
 
-![画面1](/images/development/quest-board/Untitled.png)
+![Screen 1](/images/development/quest-board/Untitled.png)
 
-![画面2](/images/development/quest-board/Untitled_1.png)
+![Screen 2](/images/development/quest-board/Untitled_1.png)
 
-![画面3](/images/development/quest-board/Untitled_2.png)
+![Screen 3](/images/development/quest-board/Untitled_2.png)
 
-![画面4](/images/development/quest-board/Untitled_3.png)
+![Screen 4](/images/development/quest-board/Untitled_3.png)
 
-![画面5](/images/development/quest-board/Untitled_4.png)
+![Screen 5](/images/development/quest-board/Untitled_4.png)
 
-![画面6](/images/development/quest-board/Untitled_5.png)
+![Screen 6](/images/development/quest-board/Untitled_5.png)
 
-## 発表資料
+## Presentation Materials
 
-![発表資料1](/images/development/quest-board/3.jpg)
+![Presentation 1](/images/development/quest-board/3.jpg)
 
-![発表資料2](/images/development/quest-board/7.jpg)
+![Presentation 2](/images/development/quest-board/7.jpg)
 
-![発表資料3](/images/development/quest-board/9.jpg)
+![Presentation 3](/images/development/quest-board/9.jpg)
 
-![発表資料4](/images/development/quest-board/10.jpg)
+![Presentation 4](/images/development/quest-board/10.jpg)

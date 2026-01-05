@@ -1,32 +1,32 @@
-## 概要
+## Overview
 
-学生団体 POLYGON でのチーム開発。IoT センサーデータを収集・可視化し、富山県立大学の DX センターという施設の利用状況をリアルタイム表示する Web アプリケーション
+Team development in the student organization POLYGON. A web application that collects and visualizes IoT sensor data and displays the real-time usage status of the DX Center facility at Toyama Prefectural University.
 
-### 実装した内容 + 使用したセンサ
+### Implemented Content + Sensors Used
 
-1. 温湿度、気圧といった気象情報の表示
+1. Display of weather information such as temperature, humidity, and atmospheric pressure
 
-   温度・湿度・気圧センサ（BME280）×3
+   Temperature/Humidity/Atmospheric Pressure Sensor (BME280) ×3
 
-2. DXセンター 1日の扉の開閉回数
+2. Number of door openings and closings per day at DX Center
 
-   光センサ ×1　人感センサ ×1
+   Light Sensor ×1　Motion Sensor ×1
 
-3. 会議室の利用状況
+3. Conference room usage status
 
-   距離センサ ×1
+   Distance Sensor ×1
 
-4. おみくじ（カメラの前で手を合わせるとおみくじ開始）
+4. Fortune slip (fortune telling starts when you put your hands together in front of the camera)
 
-## アプリ画面
+## App Screen
 
-![アプリ画面](/images/development/spring-iot/SensingDXCenter.png)
+![App Screen](/images/development/spring-iot/SensingDXCenter.png)
 
-## 工夫した点 + 頑張った点
+## Innovations + Efforts
 
-- 初めての電子工作とPythonでの記述だったが、手探りでなんとか自動的にデータの取得まで実装ができて良かった
-- Firebaseも初めての使用だったが、構造など基礎の理解から深め、使用できるようになった
-- Webアプリ
-  - `iphoneのウィジェット`やMUI風なデザインコンセプトで作成した
-  - CSSではなく`SASS`を使用することで、効率的に、そして綺麗にスタイルを記述した
-- かなり時間がかかったが、チーム内でのミーティングや連絡はかかさず、今回のプロジェクトにリソースを割くことができてよかった
+- It was my first time doing electronics and writing in Python, but I was glad I managed to implement automatic data acquisition through trial and error
+- It was also my first time using Firebase, but I was able to deepen my understanding from the basics such as structure and use it
+- Web app
+  - Created with a design concept like `iPhone widgets` and MUI style
+  - By using `SASS` instead of CSS, I was able to write styles efficiently and cleanly
+- Although it took quite a bit of time, I was glad I could allocate resources to this project without missing team meetings and communications

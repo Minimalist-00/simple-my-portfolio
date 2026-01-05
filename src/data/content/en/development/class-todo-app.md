@@ -1,14 +1,14 @@
-## 概要
+## Overview
 
-Web初学者のためのバックエンド学習を目的として開発したTodoアプリケーション
+A Todo application developed for the purpose of backend learning for web beginners.
 
-Azure Functionsを使用したサーバーレスAPIとAzure SQL Databaseを組み合わせ、フロントエンドからバックエンドまでの一連の開発フローを作成した。
+Combined a serverless API using Azure Functions with Azure SQL Database to create a complete development flow from frontend to backend.
 
-## 主な機能
+## Main Features
 
-- タスクの一覧表示
-- タスクの追加・削除
-- タスクの完了/未完了切り替え
-- 残りタスク数の表示
-- REST APIによるCRUD操作
-- クラウドデータベースとの連携
+- Task list display
+- Task addition/deletion
+- Task completion/incomplete toggle
+- Remaining task count display
+- CRUD operations via REST API
+- Integration with cloud database

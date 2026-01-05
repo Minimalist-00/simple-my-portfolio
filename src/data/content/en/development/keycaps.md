@@ -1,33 +1,33 @@
-## 概要
+## Overview
 
-大学で初めて作成した自作キーボードのためのキーキャップ販売サイトです。メカニカルキーボードが好きなため、自分のキーキャップを撮影し、販売サイト風に仕上げました。
+This is a keycap sales site for the custom keyboard I made for the first time at university. Since I like mechanical keyboards, I photographed my own keycaps and finished it like a sales site.
 
-※バックエンドは未実装
+※Backend not implemented
 
-期間: 2022 年 12 月
+Period: December 2022
 
-役割: フロントエンド・デザイン
+Role: Frontend and Design
 
 GitHub: https://github.com/Minimalist-00/Key-Caps
 
 URL: https://key-caps.vercel.app/
 
-## アプリ画面
+## App Screens
 
-![キーキャップサイト画面1](/images/development/keycaps/image_1.png)
+![Keycap Site Screen 1](/images/development/keycaps/image_1.png)
 
-![キーキャップサイト画面2](/images/development/keycaps/image_2.png)
+![Keycap Site Screen 2](/images/development/keycaps/image_2.png)
 
-## 工夫した点
+## Innovations
 
-**デザイン面**
+**Design Aspects**
 
-- BootstrapとMaterial-UIでミニマルなデザイン
-- 細かい演出（カーソル、アラート等）
-- グリッドレイアウトで統一感のある配置
+- Minimal design with Bootstrap and Material-UI
+- Fine details (cursor, alerts, etc.)
+- Unified placement with grid layout
 
-**コード面**
+**Code Aspects**
 
-- データを別ファイルに分離し、propsで受け渡し
-- 機能ごとにファイルを分割
-- Bootstrapを活用してcssを削減
+- Separated data into separate files and passed via props
+- Divided files by function
+- Reduced CSS by utilizing Bootstrap

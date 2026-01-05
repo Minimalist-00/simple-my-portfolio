@@ -1,44 +1,44 @@
-## 概要
+## Overview
 
-勢いで参加することになった九州ハッカソンでの成果物。YouTubeの海外動画をずんだもんがリアルタイムで吹き替えをするChrome拡張機能。音声の生成が動画に追いつかなかったり、Chrome拡張という制約の基での開発のため苦戦した。
-初めて参加した技育CAMPで準優勝し、その後感情分析の機能追加などのアップデートで技育CAMPアドバンスに臨み、（受賞者以上が集まる大会で）優勝した。
+A project created at the Kyushu Hackathon that I participated in on impulse. A Chrome extension where Zundamon dubs overseas YouTube videos in real-time. I struggled because the voice generation couldn't keep up with the video and due to the constraints of developing a Chrome extension.
+I won second place at my first Geek CAMP, and then competed in Geek CAMP Advance with updates such as adding emotion analysis features, and won (in a competition where award winners and above gathered).
 
-2023年 6月 - 2023年 9月
+June 2023 - September 2023
 
-役割: フロントエンド（Chrome拡張機能の設計からReactでのUI実装）
+Role: Frontend (Chrome extension design and UI implementation with React)
 
-## 実際の画面
+## Actual Screen
 
-![実際の画面](/images/development/zundamon-x/Untitled.png)
+![Actual Screen](/images/development/zundamon-x/Untitled.png)
 
-## アプリ概要
+## App Overview
 
-![概要1](/images/development/zundamon-x/4.jpg)
+![Overview 1](/images/development/zundamon-x/4.jpg)
 
-![概要2](/images/development/zundamon-x/5.jpg)
+![Overview 2](/images/development/zundamon-x/5.jpg)
 
-![概要3](/images/development/zundamon-x/9.jpg)
+![Overview 3](/images/development/zundamon-x/9.jpg)
 
-![概要4](/images/development/zundamon-x/10.jpg)
+![Overview 4](/images/development/zundamon-x/10.jpg)
 
-## アピールポイント
+## Key Points
 
-- 初めてのChrome拡張開発
-  - Reactと要領が全然違うせいで、書き方を1から学んだ
-- JavaScript → TypeScriptでのコーディング
-- YouTubeのAPIを使用
-- 音声生成に間に合わせるために、フロントでの処理を工夫
+- First Chrome extension development
+  - The approach was completely different from React, so I learned how to write from scratch
+- Coding in JavaScript → TypeScript
+- Used YouTube API
+- Devised frontend processing to keep up with voice generation
 
-## 大変だったこと/取り組んだこと
+## Challenges / Efforts
 
-- chrome拡張という制約にずっと苦しめられた。
-  - 普段のReactの書き方とは大きく違う
-  - ポップアップとそれ以外の扱いの違い
-- 動画の再生に対して、音声の生成が間に合わないという事態で何度もアルゴリズムを練り直して最適化をした
-- YouTubeの字幕取得、再生時刻の取得など…様々なアプローチが必要であった
-- YouTube公式から、AIの自動吹き替えが2024年に実装されるというのを見たため、「可愛さ」を売りにブラッシュアップを行った
-- 初のTypescript、様々なAPIの使用、状態管理にRecoilを使用したなどの挑戦
+- Constantly struggled with Chrome extension constraints
+  - Very different from usual React writing style
+  - Differences in handling popups and other elements
+- Repeatedly refined and optimized algorithms when voice generation couldn't keep up with video playback
+- Various approaches were needed such as getting YouTube subtitles, getting playback time, etc.
+- Since YouTube officially announced that AI automatic dubbing would be implemented in 2024, I refined it to sell "cuteness"
+- Challenges such as first TypeScript, using various APIs, using Recoil for state management
 
-## プレゼン資料
+## Presentation Materials
 
-[技育CAMPキャラバン@福岡 での発表資料](https://www.canva.com/design/DAFmMDlxKaY/R9pbqFA6zAZ6M1xkFoWZ7Q/view?utm_content=DAFmMDlxKaY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+[Presentation at Geek CAMP Caravan @Fukuoka](https://www.canva.com/design/DAFmMDlxKaY/R9pbqFA6zAZ6M1xkFoWZ7Q/view?utm_content=DAFmMDlxKaY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)

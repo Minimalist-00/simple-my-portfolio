@@ -1,11 +1,11 @@
-## 概要
+## Overview
 
-2025 年 7 月に行われた参議院選挙において、各市町村から選挙管理委員会への投票結果の定期報告を、メールや電話、手動集計していたものを Forms・PowerAutomate に置き換えるように実装。実際に2025年参議院選挙のときに使用してもらい、とても好評であった
+In the House of Councillors election held in July 2025, I implemented a system to replace the manual aggregation of periodic voting result reports from each municipality to the Election Management Committee, which had been done via email, phone, and manual tabulation, with Forms and Power Automate. It was actually used during the 2025 House of Councillors election and was very well received.
 
-Before: メールや電話 → 県選挙管理委員会が Excel に入力 → 様式に合わせて整形 → 報道機関に共有
+Before: Email/phone → Prefectural Election Management Committee inputs into Excel → Formats according to template → Shares with media
 
-After: Forms で提出 → PA で Excel を自動加工 → Box に自動投稿された結果を報道機関が閲覧
+After: Submit via Forms → PA automatically processes Excel → Media views results automatically posted to Box
 
-期間: 2025 年 7 月（およそ 3 週間）
+Period: July 2025 (approximately 3 weeks)
 
-形式: チーム（3 人）
+Format: Team (3 people)

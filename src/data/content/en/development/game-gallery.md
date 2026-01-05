@@ -1,23 +1,23 @@
-## 概要
+## Overview
 
-自分がプレイしているゲームや好きなゲームをTwitterのフォロワーに紹介するために制作したWebアプリケーション。カード形式でゲームを視覚的に表示し、フォロワーが一目で興味のあるゲームを見つけられるギャラリーサービス
+A web application created to introduce games I'm playing and games I like to my Twitter followers. A gallery service that visually displays games in card format, allowing followers to find games they're interested in at a glance.
 
-![ゲームギャラリー画面](/images/development/game-gallery/game-gallery-is-hoge.jpeg)
+![Game Gallery Screen](/images/development/game-gallery/game-gallery-is-hoge.jpeg)
 
-## 主な機能
+## Main Features
 
-- ゲームをカード形式で表示
-- プラットフォーム別タグ表示（Switch、PC等）
-- ユーザープロフィール機能
-- レスポンシブデザイン（現在はスマートフォンのみ）
+- Display games in card format
+- Platform-specific tag display (Switch, PC, etc.)
+- User profile function
+- Responsive design (currently smartphone only)
 
-## スクリーンショット
+## Screenshots
 
 <div className="flex flex-col md:flex-row gap-4 justify-center">
   <div className="w-full md:w-1/2">
-    <img src="/images/development/game-gallery/gallery_1.png" alt="ギャラリー画面" className="rounded-md w-full shadow-md" />
+    <img src="/images/development/game-gallery/gallery_1.png" alt="Gallery Screen" className="rounded-md w-full shadow-md" />
   </div>
   <div className="w-full md:w-1/2">
-    <img src="/images/development/game-gallery/gallery_2.png" alt="プロフィール画面" className="rounded-md w-full shadow-md" />
+    <img src="/images/development/game-gallery/gallery_2.png" alt="Profile Screen" className="rounded-md w-full shadow-md" />
   </div>
 </div>
