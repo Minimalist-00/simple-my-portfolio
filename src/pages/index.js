@@ -10,6 +10,8 @@ import {
 } from 'react-icons/io5'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import TechStack from '../components/tech-stack'
+import { skillIconsString, toolSkillIconsString } from '../data/skills'
 
 const Home = () => {
   const { t } = useTranslation('common')
@@ -66,18 +68,20 @@ const Home = () => {
 
         <Section delay={0.3}>
           <h3 className="section-title">Development</h3>
-          <div className="text-justify hyphens-auto">
+          <div className="text-justify hyphens-auto mb-6">
             <div>
               <p>{t('developmentSection.intro')}</p>
-              <div className="pt-2">
+              <div className="pt-2 pb-2">
                 <p>{t('developmentSection.frontend')}</p>
                 <p>{t('developmentSection.design')}</p>
                 <p>{t('developmentSection.backend')}</p>
                 <p>{t('developmentSection.cloud')}</p>
+                <TechStack skillStr={skillIconsString} />
               </div>
             </div>
             <div className="pt-2">{t('developmentSection.experience')}</div>
             <div className="pt-2">{t('developmentSection.current')}</div>
+            <TechStack skillStr={toolSkillIconsString} />
           </div>
         </Section>
 

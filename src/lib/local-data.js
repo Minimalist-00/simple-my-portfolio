@@ -12,7 +12,6 @@ function getTranslations(locale = 'ja') {
     'src',
     'data',
     'content',
-    'locales',
     locale,
     'common.json'
   )

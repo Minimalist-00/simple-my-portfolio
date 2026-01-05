@@ -5,6 +5,6 @@ module.exports = {
     defaultLocale: 'ja',
     locales: ['ja', 'en']
   },
-  localePath: path.resolve('./src/data/content/locales'),
+  localePath: path.resolve('./src/data/content'),
   reloadOnPrerender: process.env.NODE_ENV === 'development'
 }
