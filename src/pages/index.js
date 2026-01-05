@@ -1,7 +1,9 @@
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Image from 'next/image'
+import Link from 'next/link'
 import {
+  IoChevronForward,
   IoLogoGithub,
   IoLogoInstagram,
   IoLogoLinkedin,
@@ -83,6 +85,15 @@ const Home = () => {
             <div className="pt-2">{t('developmentSection.current')}</div>
             <TechStack skillStr={toolSkillIconsString} />
           </div>
+          <div className="flex justify-center mt-4">
+            <Link
+              href="/development"
+              className="inline-flex items-center px-6 py-2 bg-blue-400 hover:bg-blue-500 text-white font-medium rounded-md transition-colors duration-200 shadow-sm hover:shadow-md"
+            >
+              View more
+              <IoChevronForward className="ml-2" />
+            </Link>
+          </div>
         </Section>
 
         <Section delay={0.4}>
@@ -119,7 +130,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="inline-flex items-center px-4 py-2 text-teal-600 hover:bg-teal-50 rounded transition-colors">
+                <button className="inline-flex items-center px-4 py-2 text-blue-400 hover:bg-blue-50 rounded transition-colors">
                   <IoLogoGithub className="mr-2" />
                   GitHub
                 </button>
@@ -131,7 +142,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="inline-flex items-center px-4 py-2 text-teal-600 hover:bg-teal-50 rounded transition-colors">
+                <button className="inline-flex items-center px-4 py-2 text-blue-400 hover:bg-blue-50 rounded transition-colors">
                   <IoLogoTwitter className="mr-2" />x / Twitter
                 </button>
               </a>
@@ -142,7 +153,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="inline-flex items-center px-4 py-2 text-teal-600 hover:bg-teal-50 rounded transition-colors">
+                <button className="inline-flex items-center px-4 py-2 text-blue-400 hover:bg-blue-50 rounded transition-colors">
                   <IoLogoInstagram className="mr-2" />
                   Instagram
                 </button>
@@ -154,7 +165,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="inline-flex items-center px-4 py-2 text-teal-600 hover:bg-teal-50 rounded transition-colors">
+                <button className="inline-flex items-center px-4 py-2 text-blue-400 hover:bg-blue-50 rounded transition-colors">
                   <IoLogoLinkedin className="mr-2" />
                   LinkedIn
                 </button>
@@ -166,7 +177,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="inline-flex items-center px-4 py-2 text-teal-600 hover:bg-teal-50 rounded transition-colors">
+                <button className="inline-flex items-center px-4 py-2 text-blue-400 hover:bg-blue-50 rounded transition-colors">
                   <IoNewspaper className="mr-2" />
                   note
                 </button>

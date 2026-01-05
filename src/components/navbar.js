@@ -39,9 +39,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       className={`p-2 rounded transition-colors ${
-        active
-          ? 'bg-grassTeal text-[#202023]'
-          : 'text-gray-800 hover:bg-gray-100'
+        active ? 'bg-blue-200 text-gray-800' : 'text-gray-800 hover:bg-gray-100'
       }`}
       target={target}
       {...props}
