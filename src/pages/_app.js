@@ -6,7 +6,7 @@ import Fonts from '../components/fonts'
 import Layout from '../components/layouts/main'
 import '../styles/globals.css'
 
-if (typeof window !== 'undefined') {
+if (typeof window !== 'undefined' && 'scrollRestoration' in window.history) {
   window.history.scrollRestoration = 'manual'
 }
 
