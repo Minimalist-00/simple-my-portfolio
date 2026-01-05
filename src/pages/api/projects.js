@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     }
 
     // pageIdが指定されていない場合は、プロジェクト一覧を取得
-    const projects = getProjects()
+    const projects = getProjects(locale)
 
     res.status(200).json({ projects })
   } catch (error) {

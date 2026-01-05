@@ -15,51 +15,44 @@
   },
   "projects": [
     {
-      "title": "富山県庁 DX推進サポーター",
+      "id": "dxSupporter",
       "thumbnail": "/images/Projects/DXサポーター成果発表_2024_1.jpeg",
-      "description": "富山県庁のデジタル推進室内で「DX推進サポーター」として雇用（非常勤職員）",
       "contentFile": "projects/DX推進サポーター.md",
       "tags": ["government", "dx"]
     },
     {
-      "title": "関西・大阪万博登壇",
+      "id": "osakaExpo",
       "thumbnail": "/images/Projects/大阪万博2025_登壇.jpg",
-      "description": "若者に向けて「自分を変えるということ」というテーマで登壇",
       "contentFile": "projects/大阪万博登壇.md",
       "tags": ["onStage", "presentation"]
     },
     {
-      "title": "修士研究",
+      "id": "masterResearch",
       "thumbnail": "/images/no-image.png",
-      "description": "スマートフォンにおける後悔使用予測",
       "contentFile": "projects/修士研究.md",
       "tags": ["lab", "research", "psychology"]
     },
     {
-      "title": "卒業研究",
+      "id": "bachelorResearch",
       "thumbnail": "/images/Projects/UBISymposium2025.jpeg",
-      "description": "音楽嗜好の共有を通じた段階的な自己開示が受容性に与える効果の検証",
       "contentFile": "projects/卒業研究.md",
       "tags": ["lab", "research", "psychology"]
     },
     {
-      "title": "ConnecTech",
+      "id": "connectech",
       "thumbnail": "/images/Projects/ConnecTech.png",
-      "description": "研究室内で確立した研究グループ",
       "contentFile": "projects/ConnecTech.md",
       "tags": ["lab", "leadership"]
     },
     {
-      "title": "Web講義 TA",
+      "id": "webLectureTA",
       "thumbnail": "/images/no-image.png",
-      "description": "",
       "contentFile": "projects/WebLectureTA.md",
       "tags": ["education", "ta"]
     },
     {
-      "title": "ポートランド起業家研修",
+      "id": "portlandProgram",
       "thumbnail": "/images/no-image.png",
-      "description": "",
       "contentFile": "projects/ポートランド起業家研修.md",
       "hidden": true,
       "tags": ["overseas", "entrepreneurship"]

@@ -12,96 +12,84 @@
   },
   "projects": [
     {
-      "title": "ZUNDAMON-X",
+      "id": "zundamonX",
       "thumbnail": "/images/development/zundamon-x/ZUNDAMON-X-サムネ.png",
-      "description": "海外のYouTubeの動画を可愛い声でリアルタイム吹き替えする",
       "contentFile": "development/zundamon-x.md",
       "tags": ["frontend", "chrome", "team", "hackathon"],
       "skills": ["react", "ts", "recoil"]
     },
     {
-      "title": "Quest Board",
+      "id": "questBoard",
       "thumbnail": "/images/development/quest-board/QuestBoard.png",
-      "description": "学生団体POLYGONでプロジェクト管理・参加ができる掲示板サービス",
       "contentFile": "development/quest-board.md",
       "tags": ["backend", "team", "hackathon"],
       "skills": ["go", "postgres", "docker", "postman", "react"]
     },
     {
-      "title": "Game Gallery",
+      "id": "gameGallery",
       "thumbnail": "/images/development/game-gallery/game-gallery-サムネ.png",
-      "description": "自分がプレイしているゲームや好きなゲームをTwitterのフォロワーに紹介するために制作したWebアプリケーション",
       "contentFile": "development/game-gallery.md",
       "tags": ["frontend", "backend", "personal"],
       "skills": ["nextjs", "ts", "tailwindcss", "aws"]
     },
     {
-      "title": "予算要求参照システム",
+      "id": "ragSystem",
       "thumbnail": "/images/development/rag-system/architecture.png",
-      "description": "Azure OpenAIと組み合わせて、予算要求の参照を容易にするRAGシステム",
       "contentFile": "development/rag-system.md",
       "tags": ["backend", "team"],
       "skills": ["python", "azure"]
     },
     {
-      "title": "ToDo App",
+      "id": "todoApp",
       "thumbnail": "/images/no-image.png",
-      "description": "授業教材としてのToDoアプリをNext.js × Azureで作成",
       "contentFile": "development/class-todo-app.md",
       "tags": ["frontend", "backend", "personal"],
       "skills": ["nextjs", "js", "azure"]
     },
     {
-      "title": "Seichi Cross Over",
+      "id": "seichiCrossOver",
       "thumbnail": "/images/development/seichi-cross-over/SeichiCrossOver.png",
-      "description": "アニメ好きな外国人観光客が日本人と繋がって聖地巡礼ができるマッチングサービス",
       "contentFile": "development/seichi-cross-over.md",
       "tags": ["frontend", "uiux", "team", "hackathon"],
       "skills": ["react", "typescript", "graphql", "figma"]
     },
     {
-      "title": "Oya class",
+      "id": "oyaClass",
       "thumbnail": "/images/development/oya-class/Oyaclass.png",
-      "description": "小学校の先生と保護者に向けた「学校のお便りが机の奥に詰まること」を解決したサービス",
       "contentFile": "development/oya-class.md",
       "tags": ["frontend", "design", "team"],
       "skills": ["react", "mui", "azure"]
     },
     {
-      "title": "KeyCaps",
+      "id": "keycaps",
       "thumbnail": "/images/development/keycaps/KeyCaps.png",
-      "description": "初めて制作したショッピングサイトを模倣したWebアプリ",
       "contentFile": "development/keycaps.md",
       "tags": ["frontend", "design", "personal"],
       "skills": ["react", "javascript", "bootstrap", "mui"]
     },
     {
-      "title": "補助金定期取得システム",
+      "id": "grantFinder",
       "thumbnail": "/images/development/grant-finder/デジタル庁.png",
-      "description": "JグランツAPIから補助金情報を自動取得・収集するシステム",
       "contentFile": "development/grant-finder.md",
       "tags": ["backend"],
       "skills": ["python", "azure"]
     },
     {
-      "title": "春プロジェクト IoT班",
+      "id": "springIot",
       "thumbnail": "/images/development/spring-iot/SensingDXCenter.png",
-      "description": "IoT(センサ)を活用して、当学施設「DXセンター」の情報を表示するWebアプリ",
       "contentFile": "development/spring-iot.md",
       "tags": ["frontend", "iot", "team"],
       "skills": ["react", "sass", "python", "firebase", "raspberrypi"]
     },
     {
-      "title": "Fantarest",
+      "id": "fantarest",
       "thumbnail": "/images/development/fantarest/FANTAREST.png",
-      "description": "富山で「スキ」を見つけるための、魅力発信型プラットフォームをスマホ向けに企画",
       "contentFile": "development/fantarest.md",
       "tags": ["team", "hackathon"]
     },
     {
-      "title": "参議院選挙DX",
+      "id": "electionDx",
       "thumbnail": "/images/no-image.png",
-      "description": "参議院選挙の投票結果報告をForms・PowerAutomateで自動化",
       "contentFile": "development/参議院選挙DX.md",
       "tags": ["team"]
     }

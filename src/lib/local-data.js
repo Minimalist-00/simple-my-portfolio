@@ -2,14 +2,39 @@ import fs from 'fs'
 import path from 'path'
 
 /**
+ * 翻訳ファイルからデータを取得
+ * @param {string} locale - 言語コード
+ * @returns {object} 翻訳データ
+ */
+function getTranslations(locale = 'ja') {
+  const filePath = path.join(
+    process.cwd(),
+    'src',
+    'data',
+    'content',
+    'locales',
+    locale,
+    'common.json'
+  )
+  const fileContents = fs.readFileSync(filePath, 'utf8')
+  return JSON.parse(fileContents)
+}
+
+/**
  * JSONファイルからプロジェクト一覧を取得
- * @param {string} jsonFileName - JSONファイル名（'projects.json' または 'development.json'）
+ * @param {string} jsonFileName - JSONファイル名('projects.json' または 'development.json')
+ * @param {string} locale - 言語コード
  * @returns {Array} プロジェクトデータの配列
  */
-export function getProjectsFromJson(jsonFileName) {
+export function getProjectsFromJson(jsonFileName, locale = 'ja') {
   const filePath = path.join(process.cwd(), 'src', 'data', jsonFileName)
   const fileContents = fs.readFileSync(filePath, 'utf8')
   const parsedData = JSON.parse(fileContents)
+
+  // 翻訳データを取得
+  const translations = getTranslations(locale)
+  const translationType =
+    jsonFileName === 'projects.json' ? 'projects' : 'development'
 
   // { tagDefinitions, projects } 形式のJSONファイルから projects を取得
   const data = parsedData.projects || []
@@ -19,19 +44,25 @@ export function getProjectsFromJson(jsonFileName) {
     .map(item => {
       let processedItem = { ...item }
 
-      // IDがない場合はcontentFileから生成する
-      if (!processedItem.id && processedItem.contentFile) {
-        const id = path.basename(processedItem.contentFile, '.md')
-        processedItem.id = id
+      // 翻訳からタイトルと説明文を取得
+      if (
+        processedItem.id &&
+        translations[translationType]?.[processedItem.id]
+      ) {
+        const translatedData = translations[translationType][processedItem.id]
+        processedItem.title = translatedData.title
+        processedItem.description = translatedData.description
       }
 
       // タグキーをタグオブジェクトに展開する
       if (processedItem.tags && Array.isArray(processedItem.tags)) {
         const expandedTags = processedItem.tags.map(tagKey => {
           const tagDef = tagDefinitions[tagKey]
+          // 翻訳からタグ名を取得
+          const tagName = translations.tags?.[tagKey] || tagKey
           return tagDef
-            ? { ...tagDef, id: tagKey }
-            : { id: tagKey, name: tagKey, color: 'gray' }
+            ? { ...tagDef, id: tagKey, name: tagName }
+            : { id: tagKey, name: tagName, color: 'gray' }
         })
         processedItem.tags = expandedTags
       }
@@ -43,24 +74,17 @@ export function getProjectsFromJson(jsonFileName) {
 
 /**
  * Markdownファイルからコンテンツを取得
- * @param {string} contentFile - コンテンツファイルのパス（例: 'projects/project-1.md'）
+ * @param {string} contentFile - コンテンツファイルのパス(例: 'projects/project-1.md')
  * @param {string} locale - 言語コード (デフォルト: 'ja')
  * @returns {string} Markdownコンテンツ
  */
 export function getMarkdownContent(contentFile, locale = 'ja') {
-  // contentFileがすでにlocaleを含んでいる場合（life.mdのケースなど）を考慮
-  // ただし、life.js側ですでに {locale}/life.md として渡している場合はそのままでよいが、
-  // projectsなどは projects/xxx.md として渡されるため、 ja/projects/xxx.md に変換する必要がある。
-  // ここでは汎用性を高めるため、単純にパスを結合するアプローチをとる。
-  // life.jsからは 'life.md' だけ渡して、ここで locale を結合する方が統一感があるが、
-  // 現状life.jsは修正済みなので、projects/developmentの方を合わせる。
-
   let filePath
   if (contentFile.startsWith('ja/') || contentFile.startsWith('en/')) {
-    // すでにロケールが含まれている場合（life.jsからの呼び出しなど）
+    // すでにロケールが含まれている場合(life.jsからの呼び出しなど)
     filePath = path.join(process.cwd(), 'src', 'data', 'content', contentFile)
   } else {
-    // ロケールが含まれていない場合（projects/xxx.mdなど）、ロケールを付与
+    // ロケールが含まれていない場合(projects/xxx.mdなど)、ロケールを付与
     filePath = path.join(
       process.cwd(),
       'src',
@@ -88,7 +112,7 @@ export function getMarkdownContent(contentFile, locale = 'ja') {
  * @returns {object|null} プロジェクト詳細情報
  */
 export function getProjectById(jsonFileName, projectId, locale = 'ja') {
-  const projects = getProjectsFromJson(jsonFileName)
+  const projects = getProjectsFromJson(jsonFileName, locale)
   const project = projects.find(p => p.id === projectId)
 
   if (!project) {
@@ -109,16 +133,18 @@ export function getProjectById(jsonFileName, projectId, locale = 'ja') {
 
 /**
  * Projectsページ用のデータを取得
+ * @param {string} locale - 言語コード
  */
-export function getProjects() {
-  return getProjectsFromJson('projects.json')
+export function getProjects(locale = 'ja') {
+  return getProjectsFromJson('projects.json', locale)
 }
 
 /**
  * Developmentページ用のデータを取得
+ * @param {string} locale - 言語コード
  */
-export function getDevelopmentProjects() {
-  return getProjectsFromJson('development.json')
+export function getDevelopmentProjects(locale = 'ja') {
+  return getProjectsFromJson('development.json', locale)
 }
 
 /**

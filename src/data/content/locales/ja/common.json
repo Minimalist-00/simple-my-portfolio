@@ -29,5 +29,85 @@
     "team": "チーム開発",
     "hackathon": "ハッカソン",
     "personal": "個人開発"
+  },
+  "projects": {
+    "dxSupporter": {
+      "title": "富山県庁 DX推進サポーター",
+      "description": "富山県庁のデジタル推進室内で「DX推進サポーター」として雇用(非常勤職員)"
+    },
+    "osakaExpo": {
+      "title": "関西・大阪万博登壇",
+      "description": "若者に向けて「自分を変えるということ」というテーマで登壇"
+    },
+    "masterResearch": {
+      "title": "修士研究",
+      "description": "スマートフォンにおける後悔使用予測"
+    },
+    "bachelorResearch": {
+      "title": "卒業研究",
+      "description": "音楽嗜好の共有を通じた段階的な自己開示が受容性に与える効果の検証"
+    },
+    "connectech": {
+      "title": "ConnecTech",
+      "description": "研究室内で確立した研究グループ"
+    },
+    "webLectureTA": {
+      "title": "Web講義 TA",
+      "description": ""
+    },
+    "portlandProgram": {
+      "title": "ポートランド起業家研修",
+      "description": ""
+    }
+  },
+  "development": {
+    "zundamonX": {
+      "title": "ZUNDAMON-X",
+      "description": "海外のYouTubeの動画を可愛い声でリアルタイム吹き替えする"
+    },
+    "questBoard": {
+      "title": "Quest Board",
+      "description": "学生団体POLYGONでプロジェクト管理・参加ができる掲示板サービス"
+    },
+    "gameGallery": {
+      "title": "Game Gallery",
+      "description": "自分がプレイしているゲームや好きなゲームをTwitterのフォロワーに紹介するために制作したWebアプリケーション"
+    },
+    "ragSystem": {
+      "title": "予算要求参照システム",
+      "description": "Azure OpenAIと組み合わせて、予算要求の参照を容易にするRAGシステム"
+    },
+    "todoApp": {
+      "title": "ToDo App",
+      "description": "授業教材としてのToDoアプリをNext.js × Azureで作成"
+    },
+    "seichiCrossOver": {
+      "title": "Seichi Cross Over",
+      "description": "アニメ好きな外国人観光客が日本人と繋がって聖地巡礼ができるマッチングサービス"
+    },
+    "oyaClass": {
+      "title": "Oya class",
+      "description": "小学校の先生と保護者に向けた「学校のお便りが机の奥に詰まること」を解決したサービス"
+    },
+    "keycaps": {
+      "title": "KeyCaps",
+      "description": "初めて制作したショッピングサイトを模倣したWebアプリ"
+    },
+    "grantFinder": {
+      "title": "補助金定期取得システム",
+      "description": "JグランツAPIから補助金情報を自動取得・収集するシステム"
+    },
+    "springIot": {
+      "title": "春プロジェクト IoT班",
+      "description": "IoT(センサ)を活用して、当学施設「DXセンター」の情報を表示するWebアプリ"
+    },
+    "fantarest": {
+      "title": "Fantarest",
+      "description": "富山で「スキ」を見つけるための、魅力発信型プラットフォームをスマホ向けに企画"
+    },
+    "electionDx": {
+      "title": "参議院選挙DX",
+      "description": "参議院選挙の投票結果報告をForms・PowerAutomateで自動化"
+    }
   }
 }

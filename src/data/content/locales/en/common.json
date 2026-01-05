@@ -29,5 +29,85 @@
     "team": "Team Dev",
     "hackathon": "Hackathon",
     "personal": "Personal Dev"
+  },
+  "projects": {
+    "dxSupporter": {
+      "title": "Toyama Prefectural Government DX Promotion Supporter",
+      "description": "Employed as a DX Promotion Supporter (part-time staff) in the Digital Promotion Office"
+    },
+    "osakaExpo": {
+      "title": "Kansai-Osaka Expo Speaker",
+      "description": "Gave a speech on the theme 'What It Means to Change Yourself' for young people"
+    },
+    "masterResearch": {
+      "title": "Master's Research",
+      "description": "Predicting regretful smartphone usage"
+    },
+    "bachelorResearch": {
+      "title": "Bachelor's Research",
+      "description": "Examining the effect of gradual self-disclosure through music preference sharing on acceptance"
+    },
+    "connectech": {
+      "title": "ConnecTech",
+      "description": "Research group established within the laboratory"
+    },
+    "webLectureTA": {
+      "title": "Web Lecture TA",
+      "description": ""
+    },
+    "portlandProgram": {
+      "title": "Portland Entrepreneurship Program",
+      "description": ""
+    }
+  },
+  "development": {
+    "zundamonX": {
+      "title": "ZUNDAMON-X",
+      "description": "Real-time dubbing of overseas YouTube videos with a cute voice"
+    },
+    "questBoard": {
+      "title": "Quest Board",
+      "description": "A bulletin board service for managing and participating in projects at student organization POLYGON"
+    },
+    "gameGallery": {
+      "title": "Game Gallery",
+      "description": "A web app created to introduce games I'm playing or like to my Twitter followers"
+    },
+    "ragSystem": {
+      "title": "Budget Request Reference System",
+      "description": "A RAG system combined with Azure OpenAI to make budget request references easier"
+    },
+    "todoApp": {
+      "title": "ToDo App",
+      "description": "A ToDo app created with Next.js × Azure as teaching material"
+    },
+    "seichiCrossOver": {
+      "title": "Seichi Cross Over",
+      "description": "A matching service for foreign anime fans to connect with Japanese people for pilgrimage tours"
+    },
+    "oyaClass": {
+      "title": "Oya class",
+      "description": "A service for elementary school teachers and parents that solves the problem of school newsletters getting lost in desks"
+    },
+    "keycaps": {
+      "title": "KeyCaps",
+      "description": "My first web app mimicking a shopping site"
+    },
+    "grantFinder": {
+      "title": "Grant Information Collection System",
+      "description": "A system that automatically collects grant information from the J-Grants API"
+    },
+    "springIot": {
+      "title": "Spring Project IoT Team",
+      "description": "A web app that displays information about our university's DX Center using IoT sensors"
+    },
+    "fantarest": {
+      "title": "Fantarest",
+      "description": "A mobile platform for discovering what you love in Toyama"
+    },
+    "electionDx": {
+      "title": "House of Councillors Election DX",
+      "description": "Automated voting result reporting using Forms and Power Automate"
+    }
   }
 }
