@@ -169,7 +169,8 @@
   },
   "article": {
     "loading": "Loading articles...",
-    "noArticles": "No articles found"
+    "noArticles": "No articles found",
+    "noteNotice": "Articles are written in Japanese on the note platform."
   },
   "aboutMe": {
     "skillsIntro": "I have been mainly developing web applications since December 2022. Recently, I've been improving my cloud services, game development, and video editing skills",

@@ -6,7 +6,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
 const Article = () => {
-  const { t } = useTranslation('common')
+  const { t, i18n } = useTranslation('common')
   const [articles, setArticles] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -35,6 +35,13 @@ const Article = () => {
     <Layout title="Article">
       <div>
         <h3 className="text-xl font-bold mb-4">Article</h3>
+
+        {/* 英語表示時のみ注意書きを表示 */}
+        {i18n.language === 'en' && (
+          <div className="rounded-lg mb-6 p-3 text-center bg-white/50 glass">
+            ℹ️ {t('article.noteNotice')}
+          </div>
+        )}
 
         {loading ? (
           <div className="text-center py-10">
