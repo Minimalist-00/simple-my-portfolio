@@ -14,38 +14,8 @@ import Section from '../components/section'
 const Home = () => {
   const { t } = useTranslation('common')
 
-  // Bioデータの配列
-  const bioData = [
-    {
-      year: '2021.3',
-      description: '富山県立高岡工芸高等学校 電子機械科 卒業'
-    },
-    {
-      year: '2021.4',
-      description: '富山県立大学 工学部 情報システム工学科 入学'
-    },
-    {
-      year: '2023.4',
-      description: '富山県庁で「DX推進サポーター」 任命'
-    },
-    {
-      year: '2023.10',
-      description: '岩本・河崎研究室（社会情報システムデザイン研究室） 配属'
-    },
-    {
-      year: '2025.3',
-      description: '富山県立大学 工学部 情報システム工学科 卒業'
-    },
-
-    {
-      year: '2025.4',
-      description: '富山県立大学 研究工学科 電子・情報工学専攻 入学'
-    },
-    {
-      year: '2026.4',
-      description: '1年休学し、フィリピンとカナダに留学を予定'
-    }
-  ]
+  // 翻訳ファイルからBioデータを取得
+  const bioData = t('bio', { returnObjects: true })
 
   return (
     <Layout>
@@ -98,29 +68,16 @@ const Home = () => {
           <h3 className="section-title">Development</h3>
           <div className="text-justify hyphens-auto">
             <div>
-              <p>2022年12月よりプログラミングを開始</p>
+              <p>{t('developmentSection.intro')}</p>
               <div className="pt-2">
-                <p>
-                  フロントエンド:
-                  Next.js/TypeScriptを用いたWebアプリケーション開発
-                </p>
-                <p>
-                  デザイン:
-                  Figmaを使用した簡単なUIデザイン、TailwindCSSやMUIを用いたスタイリング
-                </p>
-                <p>
-                  バックエンド:
-                  PythonやGoを用いた簡単なRestAPIの作成、オープンのAPIを使用したバックエンド
-                </p>
-                <p>クラウドサービス: Azure、AWSを用いてフルスタックな制作</p>
+                <p>{t('developmentSection.frontend')}</p>
+                <p>{t('developmentSection.design')}</p>
+                <p>{t('developmentSection.backend')}</p>
+                <p>{t('developmentSection.cloud')}</p>
               </div>
             </div>
-            <div className="pt-2">
-              これまでに、海外の動画を別の言語にリアルタイムで吹き替えするChrome拡張機能や、学生団体のプロジェクトをゲームの掲示板風に管理するサービスを作ってきた。業務面では、フルスタックなToDoアプリ教材の制作や、行政で過去の予算要求を参照するRAGシステムをAzureで開発してきた
-            </div>
-            <div className="pt-2">
-              現在は単なるWebアプリ開発に留まらず、アーティストやクリエイターの自己表現の憧れから、「やりたい」を諦めてきたゲーム制作と、Vlog制作（動画撮影、編集）に挑戦している。
-            </div>
+            <div className="pt-2">{t('developmentSection.experience')}</div>
+            <div className="pt-2">{t('developmentSection.current')}</div>
           </div>
         </Section>
 
@@ -129,20 +86,20 @@ const Home = () => {
           <div className="text-justify hyphens-auto">
             <ul className="list-disc list-inside space-y-2">
               <li>
-                <strong>ゲーム:</strong>{' '}
-                スプラトゥーンとファンタジーライフというゲームが大好きです
+                <strong>{t('hobby.gaming.title')}</strong>{' '}
+                {t('hobby.gaming.description')}
               </li>
               <li>
-                <strong>写真撮影:</strong>{' '}
-                SONYのα7C2でそのときその瞬間を美しく収めています。ポートレート撮影がすき
+                <strong>{t('hobby.photography.title')}</strong>{' '}
+                {t('hobby.photography.description')}
               </li>
               <li>
-                <strong>歌うこと:</strong>{' '}
-                学校祭で2回、結婚式で1回歌いました！歌を通じて自己を表現するのがすき
+                <strong>{t('hobby.singing.title')}</strong>{' '}
+                {t('hobby.singing.description')}
               </li>
               <li>
-                <strong>スノボ:</strong>{' '}
-                雪山を駆け抜けるのが気持ちいいんです。パウダーやグラトリがすき
+                <strong>{t('hobby.snowboarding.title')}</strong>{' '}
+                {t('hobby.snowboarding.description')}
               </li>
             </ul>
           </div>

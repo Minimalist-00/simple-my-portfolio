@@ -1,7 +1,10 @@
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import Layout from '../components/layouts/article'
 
-const timelineData = [
+const timelineDataJa = [
   {
     date: '2021.03',
     title: '富山県立高岡工芸高等学校 電子機械科 卒業',
@@ -48,7 +51,7 @@ const timelineData = [
   },
   {
     date: '2023.10 - 2027.03',
-    title: '岩本・河崎研究室（SIDLab）配属',
+    title: '岩本・河崎研究室(SIDLab)配属',
     description:
       '研究活動や外部と連携したプロジェクト、KGリーダーで後輩の育成などを行う',
     logo: '/images/AboutMe/logo_sidlab.svg'
@@ -78,7 +81,87 @@ const timelineData = [
   }
 ]
 
-const awardData = [
+const timelineDataEn = [
+  {
+    date: '2021.03',
+    title:
+      'Graduated from Toyama Prefectural Takaoka Technical High School, Department of Electronic Machinery',
+    description: ''
+  },
+  {
+    date: '2021.04',
+    title:
+      'Entered Toyama Prefectural University, Faculty of Engineering, Department of Information Systems Engineering',
+    logo: '/images/AboutMe/logo_tpu.png'
+  },
+  {
+    date: '2021.09 - 2023.06',
+    title: 'Part-time job at Hoshino Coffee',
+    description:
+      'Learned how to interact with customers and employees, and developed my attention to people and communication skills. In 2023, I served as a part-time leader, responsible for training and educating new employees. I also learned drip coffee brewing'
+  },
+  {
+    date: '2022.10 - ',
+    title: 'Joined student organization "POLYGON"',
+    description:
+      'Joined a student organization for students interested in information technology. Actively participated in IoT development projects and hackathons. Also assigned to Toyama Prefectural Government DX promotion work mentioned below',
+    logo: '/images/AboutMe/logo_polygon.png'
+  },
+  {
+    date: '2023.04 - 2026.03',
+    title:
+      'Appointed as DX Promotion Supporter at Toyama Prefectural Government',
+    description:
+      'Employed as a fixed-term employee to promote DX at the prefectural government through advice from a student perspective, technical support, and business improvement. Served as leader for one year from October 2024. Responsible for business improvement using kintone and Power Automate, and planning and developing a RAG system for budget request reference in the Finance Division.'
+  },
+  {
+    date: '2023.08',
+    title: 'Participated in CARTA HOLDINGS Summer Internship "Treasure"',
+    description:
+      'Participated in a 3-week summer internship "Treasure". Learned through lectures in the first half, and planned and developed in a hackathon format with a team in the second half. Won the Frontend Award at the final presentation',
+    logo: '/images/AboutMe/logo_carta.jpg'
+  },
+  {
+    date: '2023.09',
+    title: 'Participated in Excite Holdings Summer Internship "Booost!!!"',
+    description:
+      'Participated in a 1-week summer internship "Booost!!!". Planned and developed a recommendation system for a healthcare consultation service with a team',
+    logo: '/images/AboutMe/logo_excite.png'
+  },
+  {
+    date: '2023.10 - 2027.03',
+    title: 'Assigned to Iwamoto-Kawasaki Laboratory (SIDLab)',
+    description:
+      'Conducting research activities, projects in collaboration with external parties, and training juniors as KG leader',
+    logo: '/images/AboutMe/logo_sidlab.svg'
+  },
+  {
+    date: '2024.02 - 2024.03',
+    title: 'Part-time job at University Administration Office',
+    description:
+      'As an initiative of student organization POLYGON, worked on DX for part-time employee attendance management. Conducted interviews with the General Affairs Division, reviewed business flows, and implemented a system using Power Automate'
+  },
+  {
+    date: '2025.03',
+    title:
+      'Graduated from Toyama Prefectural University, Faculty of Engineering, Department of Information Systems Engineering',
+    description: ''
+  },
+  {
+    date: '2025.04',
+    title:
+      "Entered Toyama Prefectural University Graduate School, Master's Program in Electronics and Information Engineering",
+    description: ''
+  },
+  {
+    date: '2026.04 - 2027.03',
+    title: 'Study abroad in the Philippines and Canada',
+    description:
+      'Planning to take a year off to study abroad in the Philippines for 4 months and Canada for 7 months to realize my dreams'
+  }
+]
+
+const awardDataJa = [
   {
     date: '2023.04.27',
     title: 'サポーターズ LT会 出場'
@@ -111,7 +194,7 @@ const awardData = [
     date: '2023.09.02',
     title: 'サポーターズ 技育CAMPアドバンス Vol.3 大賞(優勝)',
     description:
-      'YouTube吹き替え翻訳「ZUNDAMON-X」をブラッシュアップして出場。プレゼンを担当し、優勝（大賞）を受賞',
+      'YouTube吹き替え翻訳「ZUNDAMON-X」をブラッシュアップして出場。プレゼンを担当し、優勝(大賞)を受賞',
     image: '/images/AboutMe/2023_技育アドバンス優勝.jpg'
   },
   {
@@ -137,7 +220,69 @@ const awardData = [
   }
 ]
 
-const qualificationData = [
+const awardDataEn = [
+  {
+    date: '2023.04.27',
+    title: 'Supporters LT Session Participation'
+  },
+  {
+    date: '2023.06.17',
+    title: 'Supporters Geek CAMP Caravan @Fukuoka Excellence Award',
+    description:
+      'Developed "ZUNDAMON-X", a Chrome extension that converts and plays overseas YouTube videos in real-time Japanese audio',
+    image: '/images/AboutMe/2023_技育CAMPキャラバン優秀賞.jpg'
+  },
+  {
+    date: '2023.07.29',
+    title: 'Supporters Geek CAMP Caravan @Kanazawa Speaker',
+    description:
+      'Developed "QuestBoard", a bulletin board for managing and participating in projects at student organization POLYGON'
+  },
+  {
+    date: '2023.08.07 - 08.25',
+    title:
+      'CARTA HOLDINGS Summer Internship [Treasure] Participation / Frontend Award',
+    image: '/images/AboutMe/2023_CARTAHOLDINGSフロントエンド賞.jpg'
+  },
+  {
+    date: '2023.08.12',
+    title: 'Supporters Geek Exhibition Speaker',
+    description: 'Participated with an improved version of "QuestBoard"'
+  },
+  {
+    date: '2023.09.02',
+    title: 'Supporters Geek CAMP Advance Vol.3 Grand Prize (Winner)',
+    description:
+      'Participated with an improved version of YouTube dubbing translation "ZUNDAMON-X". Gave the presentation and won the grand prize',
+    image: '/images/AboutMe/2023_技育アドバンス優勝.jpg'
+  },
+  {
+    date: '2024.02',
+    title: 'Toyama Local Media Hackathon Award',
+    image: '/images/AboutMe/とやまローカルメディアハッカソン.jpeg'
+  },
+  {
+    date: '2025.02.26',
+    title: 'UBI Research Group Japan UBI Symposium2025 Research Presentation',
+    description:
+      'Poster presentation on the theme "The Effect of Self-Disclosure through Music Preference Sharing on Acceptance"'
+  },
+  {
+    date: '2025.07.19',
+    title: 'Osaka-Kansai Expo Future Life Village Speaker',
+    description:
+      'Gave a speech on the theme "What It Means to Change Yourself" for young people'
+  },
+  {
+    date: '2025.10.09',
+    title:
+      'J-LIS Local Government Informatization Promotion Fair Microsoft Booth Speaker',
+    description:
+      'Presented the initiatives of Prefectural Government DX Promotion Supporter'
+  }
+]
+
+const qualificationDataJa = [
   {
     title: '基本情報技術者試験'
   },
@@ -146,6 +291,18 @@ const qualificationData = [
   },
   {
     title: '乙種第4類危険物取扱者'
+  }
+]
+
+const qualificationDataEn = [
+  {
+    title: 'Fundamental Information Technology Engineer Examination'
+  },
+  {
+    title: "Driver's License (Class 1 Ordinary Vehicle)"
+  },
+  {
+    title: 'Hazardous Materials Engineer (Class 4)'
   }
 ]
 
@@ -439,108 +596,121 @@ const SkillCard = ({ skills }) => {
   )
 }
 
-const AboutMe = () => (
-  <Layout title="About Me">
-    <div>
+const AboutMe = () => {
+  const { t } = useTranslation('common')
+  const router = useRouter()
+  const { locale } = router
+
+  // localeに応じてデータを切り替え
+  const timelineData = locale === 'en' ? timelineDataEn : timelineDataJa
+  const awardData = locale === 'en' ? awardDataEn : awardDataJa
+  const qualificationData =
+    locale === 'en' ? qualificationDataEn : qualificationDataJa
+
+  return (
+    <Layout title="About Me">
       <div>
-        <h3 className="text-xl mb-2 font-bold">My Skills</h3>
-        <p className="text-[15px] text-gray-700 pb-4">
-          2022年12月より主にWebアプリケーション開発を行っている。最近はクラウドサービス、ゲーム制作、動画編集スキルを伸ばしている
-        </p>
+        <div>
+          <h3 className="text-xl mb-2 font-bold">My Skills</h3>
+          <p className="text-[15px] text-gray-700 pb-4">
+            {t('aboutMe.skillsIntro')}
+          </p>
 
-        {/* Frontend */}
-        <h5 className="text-lg font-bold pb-2">Frontend</h5>
-        <p className="text-[15px] text-gray-700 pb-4">
-          Next.jsを用いた開発を主としている。ハッカソンで3度受賞し、インターンや個人開発で多くの経験を積んでいる
-        </p>
-        <SkillCard skills={frontendSkills} />
+          {/* Frontend */}
+          <h5 className="text-lg font-bold pb-2">Frontend</h5>
+          <p className="text-[15px] text-gray-700 pb-4">
+            {t('aboutMe.frontend')}
+          </p>
+          <SkillCard skills={frontendSkills} />
 
-        {/* Backend */}
-        <h5 className="text-lg font-bold pb-2 pt-4">Backend</h5>
-        <p className="text-[15px] text-gray-700 pb-4">
-          GoやTSを用いて簡単なREST
-          API開発からデータベース接続ができる。またオープンのAPI（例: Spotify
-          Web
-          APIや補助金API、SlackAPIなど）を用いて簡単なアプリケーション開発ができる
-        </p>
-        <SkillCard skills={backendSkills} />
+          {/* Backend */}
+          <h5 className="text-lg font-bold pb-2 pt-4">Backend</h5>
+          <p className="text-[15px] text-gray-700 pb-4">
+            {t('aboutMe.backend')}
+          </p>
+          <SkillCard skills={backendSkills} />
 
-        {/* General */}
-        <h5 className="text-lg font-bold pb-2 pt-4">General</h5>
-        <p className="text-[15px] text-gray-700 pb-4">
-          大学の授業や個人で触れたことのある言語。現在ゲーム制作のためC#を学習中
-        </p>
-        <SkillCard skills={generalSkills} />
+          {/* General */}
+          <h5 className="text-lg font-bold pb-2 pt-4">General</h5>
+          <p className="text-[15px] text-gray-700 pb-4">
+            {t('aboutMe.general')}
+          </p>
+          <SkillCard skills={generalSkills} />
 
-        {/* Cloud */}
-        <h5 className="text-lg font-bold pb-2 pt-4">Cloud</h5>
-        <p className="text-[15px] text-gray-700 pb-4">
-          行政や大学授業のためにクラウド環境を用いた開発経験がある。主にデプロイ、関数アプリ、データベース、AIサービスの整備を担当
-        </p>
-        <SkillCard skills={cloudSkills} />
+          {/* Cloud */}
+          <h5 className="text-lg font-bold pb-2 pt-4">Cloud</h5>
+          <p className="text-[15px] text-gray-700 pb-4">{t('aboutMe.cloud')}</p>
+          <SkillCard skills={cloudSkills} />
 
-        {/* Design */}
-        <h5 className="text-lg font-bold pb-2 pt-4">Design</h5>
-        <p className="text-[15px] text-gray-700 pb-4">
-          Figmaを使用したデザインからスタイリングまでを行う。スタイリングにはTailwindCSSやMUIを使用している
-        </p>
-        <SkillCard skills={designSkills} />
+          {/* Design */}
+          <h5 className="text-lg font-bold pb-2 pt-4">Design</h5>
+          <p className="text-[15px] text-gray-700 pb-4">
+            {t('aboutMe.design')}
+          </p>
+          <SkillCard skills={designSkills} />
 
-        {/* DX推進 */}
-        <h5 className="text-lg font-bold pb-2 pt-4">DX推進</h5>
-        <p className="text-[15px] text-gray-700 pb-4">
-          富山県庁において業務の自動化や効率化のために使用してきたツール
-        </p>
-        <SkillCard skills={dxSkills} />
+          {/* DX推進 */}
+          <h5 className="text-lg font-bold pb-2 pt-4">DX推進</h5>
+          <p className="text-[15px] text-gray-700 pb-4">
+            {t('aboutMe.dxPromotion')}
+          </p>
+          <SkillCard skills={dxSkills} />
 
-        {/* Other */}
-        <h5 className="text-lg font-bold pb-2 pt-4">Other</h5>
-        <p className="text-[15px] text-gray-700 pb-4">
-          バージョン管理、プロジェクト管理、動画･画像編集やゲーム制作などに幅広いツールを活用している
-        </p>
-        <SkillCard skills={otherSkills} />
-      </div>
+          {/* Other */}
+          <h5 className="text-lg font-bold pb-2 pt-4">Other</h5>
+          <p className="text-[15px] text-gray-700 pb-4">{t('aboutMe.other')}</p>
+          <SkillCard skills={otherSkills} />
+        </div>
 
-      <div className="mt-10">
-        <h3 className="text-xl mb-4 font-bold">Experience</h3>
-        {timelineData.map((item, index) => (
-          <ExTimelineItem
-            key={index}
-            date={item.date}
-            title={item.title}
-            description={item.description}
-            logo={item.logo}
-            isLast={index === timelineData.length - 1}
-          />
-        ))}
-      </div>
-
-      <div className="mt-10">
-        <h3 className="text-xl mb-4 font-bold">Awards</h3>
-        {awardData.map((item, index) => (
-          <TimelineItem
-            key={index}
-            date={item.date}
-            title={item.title}
-            description={item.description}
-            image={item.image}
-            isLast={index === awardData.length - 1}
-          />
-        ))}
-      </div>
-
-      <div className="mt-10">
-        <h3 className="text-xl mb-4 font-bold">Qualifications</h3>
-        <ul className="list-disc ml-8 space-y-3">
-          {qualificationData.map((item, index) => (
-            <li key={index} className="text-[17px]">
-              {item.title}
-            </li>
+        <div className="mt-10">
+          <h3 className="text-xl mb-4 font-bold">Experience</h3>
+          {timelineData.map((item, index) => (
+            <ExTimelineItem
+              key={index}
+              date={item.date}
+              title={item.title}
+              description={item.description}
+              logo={item.logo}
+              isLast={index === timelineData.length - 1}
+            />
           ))}
-        </ul>
+        </div>
+
+        <div className="mt-10">
+          <h3 className="text-xl mb-4 font-bold">Awards</h3>
+          {awardData.map((item, index) => (
+            <TimelineItem
+              key={index}
+              date={item.date}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+              isLast={index === awardData.length - 1}
+            />
+          ))}
+        </div>
+
+        <div className="mt-10">
+          <h3 className="text-xl mb-4 font-bold">Qualifications</h3>
+          <ul className="list-disc ml-8 space-y-3">
+            {qualificationData.map((item, index) => (
+              <li key={index} className="text-[17px]">
+                {item.title}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default AboutMe
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common']))
+    }
+  }
+}

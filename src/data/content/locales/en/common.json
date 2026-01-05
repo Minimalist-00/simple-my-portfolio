@@ -109,5 +109,76 @@
       "title": "House of Councillors Election DX",
       "description": "Automated voting result reporting using Forms and Power Automate"
     }
+  },
+  "bio": [
+    {
+      "year": "2021.3",
+      "description": "Graduated from Toyama Prefectural Takaoka Technical High School, Department of Electronic Machinery"
+    },
+    {
+      "year": "2021.4",
+      "description": "Entered Toyama Prefectural University, Faculty of Engineering, Department of Information Systems Engineering"
+    },
+    {
+      "year": "2023.4",
+      "description": "Appointed as DX Promotion Supporter at Toyama Prefectural Government"
+    },
+    {
+      "year": "2023.10",
+      "description": "Assigned to Iwamoto-Kawasaki Laboratory (Social Information System Design Laboratory)"
+    },
+    {
+      "year": "2025.3",
+      "description": "Graduated from Toyama Prefectural University, Faculty of Engineering, Department of Information Systems Engineering"
+    },
+    {
+      "year": "2025.4",
+      "description": "Entered Toyama Prefectural University Graduate School, Master's Program in Electronics and Information Engineering"
+    },
+    {
+      "year": "2026.4",
+      "description": "Planning to take a year off to study abroad in the Philippines and Canada"
+    }
+  ],
+  "developmentSection": {
+    "intro": "Started programming in December 2022",
+    "frontend": "Frontend: Web application development using Next.js/TypeScript",
+    "design": "Design: Simple UI design using Figma, styling with TailwindCSS and MUI",
+    "backend": "Backend: Creating simple REST APIs using Python and Go, backend using open APIs",
+    "cloud": "Cloud Services: Full-stack development using Azure and AWS",
+    "experience": "I have created a Chrome extension that dubs overseas videos in real-time and a service for managing student organization projects like a game bulletin board. In my work, I have developed full-stack ToDo app teaching materials and a RAG system for referencing past budget requests in government using Azure",
+    "current": "Currently, I'm not just doing web app development, but also challenging myself with game development and Vlog creation (video shooting and editing), which I had given up on due to my admiration for artists and creators' self-expression."
+  },
+  "hobby": {
+    "gaming": {
+      "title": "Gaming:",
+      "description": "I absolutely love games like Splatoon and Fantasy Life"
+    },
+    "photography": {
+      "title": "Photography:",
+      "description": "I capture beautiful moments with my Sony α7C2. I love portrait photography"
+    },
+    "singing": {
+      "title": "Singing:",
+      "description": "I've performed at school festivals twice and at a wedding once! I love expressing myself through singing"
+    },
+    "snowboarding": {
+      "title": "Snowboarding:",
+      "description": "There's nothing like riding down snowy mountains. I love powder snow and ground tricks"
+    }
+  },
+  "article": {
+    "loading": "Loading articles...",
+    "noArticles": "No articles found"
+  },
+  "aboutMe": {
+    "skillsIntro": "I have been mainly developing web applications since December 2022. Recently, I've been improving my cloud services, game development, and video editing skills",
+    "frontend": "I mainly develop using Next.js. I've won hackathons three times and gained a lot of experience through internships and personal projects",
+    "backend": "I can develop simple REST APIs and connect to databases using Go and TypeScript. I can also build simple applications using open APIs (e.g., Spotify Web API, grant APIs, Slack API, etc.)",
+    "general": "Languages I've learned in university classes or on my own. Currently learning C# for game development",
+    "cloud": "I have experience developing in cloud environments for government and university projects. Mainly responsible for deployment, function apps, databases, and AI services",
+    "design": "I handle everything from design to styling using Figma. I use TailwindCSS and MUI for styling",
+    "dxPromotion": "Tools I've used for automating and streamlining work at Toyama Prefectural Government",
+    "other": "I use a wide range of tools for version control, project management, video/image editing, and game development"
   }
 }

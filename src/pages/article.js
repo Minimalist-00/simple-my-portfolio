@@ -1,9 +1,12 @@
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect, useState } from 'react'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
 const Article = () => {
+  const { t } = useTranslation('common')
   const [articles, setArticles] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -35,11 +38,11 @@ const Article = () => {
 
         {loading ? (
           <div className="text-center py-10">
-            <p className="text-gray-500">記事を読み込み中...</p>
+            <p className="text-gray-500">{t('article.loading')}</p>
           </div>
         ) : articles.length === 0 ? (
           <div className="text-center py-10">
-            <p className="text-gray-500">記事が見つかりませんでした</p>
+            <p className="text-gray-500">{t('article.noArticles')}</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
@@ -63,3 +66,11 @@ const Article = () => {
 }
 
 export default Article
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common']))
+    }
+  }
+}
