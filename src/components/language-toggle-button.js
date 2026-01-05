@@ -6,7 +6,10 @@ export const LanguageToggleButton = () => {
 
   const toggleLanguage = () => {
     const nextLocale = locale === 'ja' ? 'en' : 'ja'
-    router.push({ pathname, query }, asPath, { locale: nextLocale })
+    router.push({ pathname, query }, asPath, {
+      locale: nextLocale,
+      scroll: false
+    })
   }
 
   const isJa = locale === 'ja'
