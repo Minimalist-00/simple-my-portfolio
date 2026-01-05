@@ -1,4 +1,3 @@
-import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
@@ -6,7 +5,6 @@ import CardList from '../components/card-list'
 import Layout from '../components/layouts/article'
 
 const Development = () => {
-  const { t } = useTranslation('common')
   const router = useRouter()
   const { locale } = router
   const [projects, setProjects] = useState([])
