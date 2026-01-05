@@ -142,7 +142,7 @@ const ProjectModal = ({ isOpen, onClose, project, isLoading = false }) => {
                       {project.skills && project.skills.length > 0 && (
                         <div className="mt-4">
                           <h3 className="text-sm font-bold mb-2">
-                            技術スタック
+                            {t('technicalStack')}
                           </h3>
                           <div>
                             <img

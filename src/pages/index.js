@@ -32,7 +32,7 @@ const Home = () => {
         {/* プロフィール */}
         <div className="sm:flex">
           <div className="flex-grow">
-            <h2 className="text-4xl font-bold">Koki Nakagawa</h2>
+            <h2 className="text-4xl font-bold">{t('profile.name')}</h2>
             <p>{t('profile.role')}</p>
           </div>
           <div className="flex-shrink-0 mt-4 sm:mt-0 sm:ml-6 text-center">

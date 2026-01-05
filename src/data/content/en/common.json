@@ -1,6 +1,7 @@
 {
   "greeting": "Hello! I'm a first-year master's student living by turning my weaknesses into strengths! 💪",
   "profile": {
+    "name": "Koki Nakagawa",
     "role": "Japan / Master's student of Information Systems / Engineer"
   },
   "selfIntro": {
@@ -172,6 +173,7 @@
     "noArticles": "No articles found",
     "noteNotice": "Articles are written in Japanese on the note platform."
   },
+  "technicalStack": "Technical Stack",
   "aboutMe": {
     "skillsIntro": "I have been mainly developing web applications since December 2022. Recently, I've been improving my cloud services, game development, and video editing skills",
     "frontend": "I mainly develop using Next.js. I've won hackathons three times and gained a lot of experience through internships and personal projects",
